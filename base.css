@@ -2,7 +2,8 @@
   overflow: visible;
 }
 #app-mount .wrapper-3t9DeA foreignObject {
-  mask: none;
+  -webkit-mask: none;
+          mask: none;
 }
 #app-mount .wrapper-3t9DeA .dots-3Bkt3k circle:nth-child(1) {
   cy: -8 !important;
@@ -31,9 +32,12 @@
   x: 1;
   y: 1;
 }
-#app-mount .wrapper-3t9DeA img {
+#app-mount .wrapper-3t9DeA > svg > foreignObject img {
   border-radius: var(--rs-avatar-shape);
-  clip-path: inset(calc(var(--rs-small-spacing) + 1px) calc(var(--rs-small-spacing) + 1px) round var(--rs-avatar-shape));
+}
+#app-mount .wrapper-3t9DeA > svg > foreignObject:not(:only-child) img {
+  -webkit-clip-path: inset(calc(var(--rs-small-spacing) + 1px) calc(var(--rs-small-spacing) + 1px) round var(--rs-avatar-shape));
+          clip-path: inset(calc(var(--rs-small-spacing) + 1px) calc(var(--rs-small-spacing) + 1px) round var(--rs-avatar-shape));
 }
 #app-mount .wrapper-3t9DeA svg[width="25"][height="15"] > rect {
   rx: calc(var(--rs-avatar-shape) * 2) !important;
@@ -44,7 +48,8 @@
   y: 0;
   width: 100%;
   height: 100%;
-  mask: none;
+  -webkit-mask: none;
+          mask: none;
   display: block !important;
   rx: var(--rs-avatar-shape) !important;
   ry: var(--rs-avatar-shape) !important;
@@ -88,7 +93,8 @@
   pointer-events: none;
 }
 #app-mount .wrapper-3t9DeA[style*="width: 80px;"] img {
-  clip-path: inset(calc(var(--rs-large-spacing) + 1px) calc(var(--rs-large-spacing) + 1px) round var(--rs-avatar-shape));
+  -webkit-clip-path: inset(calc(var(--rs-large-spacing) + 1px) calc(var(--rs-large-spacing) + 1px) round var(--rs-avatar-shape));
+          clip-path: inset(calc(var(--rs-large-spacing) + 1px) calc(var(--rs-large-spacing) + 1px) round var(--rs-avatar-shape));
 }
 #app-mount .wrapper-3t9DeA[style*="width: 80px;"][style*="width:80px;"]:after {
   left: unset;
@@ -106,7 +112,8 @@
   z-index: 0;
 }
 #app-mount .avatarHint-1qgaV3 foreignObject {
-  mask: none;
+  -webkit-mask: none;
+          mask: none;
 }
 #app-mount .avatarHint-1qgaV3 .avatarHintInner-Dco91E {
   border-radius: var(--rs-avatar-shape) !important;
@@ -117,16 +124,19 @@
   margin-left: calc(var(--rs-width) + 2px);
 }
 #app-mount .message-1PNnaP .mask-1l8v16 img {
-  clip-path: circle(calc(19px - var(--rs-small-spacing)));
+  -webkit-clip-path: circle(calc(19px - var(--rs-small-spacing)));
+          clip-path: circle(calc(19px - var(--rs-small-spacing)));
 }
 #app-mount .memberOffline-2lN7gt img {
-  clip-path: none !important;
+  -webkit-clip-path: none !important;
+          clip-path: none !important;
 }
 #app-mount .header-QKLPzZ .wrapper-3t9DeA {
   margin-right: 20px !important;
 }
 #app-mount .offline-3nJYBR img {
-  clip-path: none !important;
+  -webkit-clip-path: none !important;
+          clip-path: none !important;
 }
 
 #app-mount .wrapper-3t9DeA foreignObject[mask*=mobile] {

@@ -1,7 +1,7 @@
 /**
  * @name RadialStatus
  * @author Gibbu#1211
- * @version 1.0.0
+ * @version -dev
  * @description Changes the status icons to wrap around the avatar. Shape can be changed inside the theme file.
  * @source https://github.com/gibbubdstuff/RadialStatus
  * @website https://www.gibbu.me
@@ -30,20 +30,18 @@
     foreignObject {
       mask: none;
     }
-    .dots-3Bkt3k {
-      circle {
-        &:nth-child(1) {
-          cy: -8 !important;
-          cx: -8.5 !important;
-        }
-        &:nth-child(2) {
-          cy: -8 !important;
-          cx: -2.25 !important;
-        }
-        &:nth-child(3) {
-          cy: -8 !important;
-          cx: 4 !important;
-        }
+    .dots-3Bkt3k circle {
+      &:nth-child(1) {
+        cy: -8 !important;
+        cx: -8.5 !important;
+      }
+      &:nth-child(2) {
+        cy: -8 !important;
+        cx: -2.25 !important;
+      }
+      &:nth-child(3) {
+        cy: -8 !important;
+        cx: 4 !important;
       }
     }
     .mask-1l8v16 > rect[x="22"] {
@@ -61,9 +59,13 @@
       x: 1;
       y: 1;
     }
-    img {
-      border-radius: var(--rs-avatar-shape);
-      clip-path: inset(calc(var(--rs-small-spacing) + 1px) calc(var(--rs-small-spacing) + 1px) round var(--rs-avatar-shape));
+    & > svg > foreignObject {
+      img {
+        border-radius: var(--rs-avatar-shape);
+      }
+      &:not(:only-child) img {
+        clip-path: inset(calc(var(--rs-small-spacing) + 1px) calc(var(--rs-small-spacing) + 1px) round var(--rs-avatar-shape));
+      }
     }
     svg[width="25"][height="15"] > rect {
       rx: calc(var(--rs-avatar-shape) * 2) !important;
