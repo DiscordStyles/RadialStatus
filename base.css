@@ -35,10 +35,6 @@
 #app-mount .wrapper-3t9DeA > svg > foreignObject img {
   border-radius: var(--rs-avatar-shape);
 }
-#app-mount .wrapper-3t9DeA > svg > foreignObject:not(:only-child) img {
-  -webkit-clip-path: inset(calc(var(--rs-small-spacing) + 1px) calc(var(--rs-small-spacing) + 1px) round var(--rs-avatar-shape));
-          clip-path: inset(calc(var(--rs-small-spacing) + 1px) calc(var(--rs-small-spacing) + 1px) round var(--rs-avatar-shape));
-}
 #app-mount .wrapper-3t9DeA svg[width="25"][height="15"] > rect {
   rx: calc(var(--rs-avatar-shape) * 2) !important;
   ry: calc(var(--rs-avatar-shape) * 2) !important;
@@ -96,12 +92,16 @@
   -webkit-clip-path: inset(calc(var(--rs-large-spacing) + 1px) calc(var(--rs-large-spacing) + 1px) round var(--rs-avatar-shape));
           clip-path: inset(calc(var(--rs-large-spacing) + 1px) calc(var(--rs-large-spacing) + 1px) round var(--rs-avatar-shape));
 }
-#app-mount .wrapper-3t9DeA[style*="width: 80px;"][style*="width:80px;"]:after {
+#app-mount .wrapper-3t9DeA[style*="width: 80px;"]:after {
   left: unset;
   right: -2px;
   top: unset;
   bottom: -2px;
   transform: none;
+}
+#app-mount .wrapper-3t9DeA:not([style*="width: 80px;"]) > svg > foreignObject:not(:only-child) img {
+  -webkit-clip-path: inset(calc(var(--rs-small-spacing) + 1px) calc(var(--rs-small-spacing) + 1px) round var(--rs-avatar-shape));
+          clip-path: inset(calc(var(--rs-small-spacing) + 1px) calc(var(--rs-small-spacing) + 1px) round var(--rs-avatar-shape));
 }
 #app-mount .wrapper-3t9DeA[style*="width: 32px;"] rect {
   width: 32px;
@@ -110,6 +110,13 @@
   y: -17;
   position: relative;
   z-index: 0;
+}
+#app-mount .wrapper-3t9DeA[style*="width: 16px;"] img {
+  -webkit-clip-path: none !important;
+          clip-path: none !important;
+}
+#app-mount .wrapper-3t9DeA[style*="width: 16px;"] rect {
+  width: 16px !important;
 }
 #app-mount .avatarHint-1qgaV3 foreignObject {
   -webkit-mask: none;
@@ -127,12 +134,12 @@
   -webkit-clip-path: circle(calc(19px - var(--rs-small-spacing)));
           clip-path: circle(calc(19px - var(--rs-small-spacing)));
 }
+#app-mount .header-QKLPzZ .wrapper-3t9DeA {
+  margin-right: 20px !important;
+}
 #app-mount .memberOffline-2lN7gt img {
   -webkit-clip-path: none !important;
           clip-path: none !important;
-}
-#app-mount .header-QKLPzZ .wrapper-3t9DeA {
-  margin-right: 20px !important;
 }
 #app-mount .offline-3nJYBR img {
   -webkit-clip-path: none !important;
@@ -164,4 +171,9 @@
 
 #app-mount .wrapper-3t9DeA:before {
   content: none !important;
+}
+
+.userInfo-2zN2z8,
+.peopleListItem-2nzedh {
+  overflow: visible;
 }
