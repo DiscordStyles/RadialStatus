@@ -7,3 +7,7 @@ Powercord Install: `git clone https://github.com/DiscordStyles/RadialStatus`
 - - -
 
 ![members](https://i.imgur.com/4zZU4iw.jpg)
+
+## License
+
+See the [LICENSE](https://github.com/DiscordStyles/RadialStatus/blob/master/LICENSE.md) file for license rights and limitations (MIT).

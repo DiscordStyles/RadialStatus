@@ -4,6 +4,6 @@
     "version": "1.0.0",
     "author": "Gibbu#1211",
     "theme": "RadialStatus.theme.css",
-    "consent": "false",
-    "license": "unknown"
+    "consent": ["ext_listing"],
+    "license": "MIT"
 }
