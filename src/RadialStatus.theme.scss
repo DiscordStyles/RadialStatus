@@ -175,10 +175,12 @@
     .avatarHintInner-Dco91E {
       border-radius: var(--rs-avatar-shape) !important;
       padding-top: 0;
-      width: calc(100% - var(--rs-width) * 4);
-      height: calc(100% - var(--rs-width) * 4);
-      margin-top: calc(var(--rs-width) + 2px);
-      margin-left: calc(var(--rs-width) + 2px);
+      width: calc(100% - var(--rs-width) - (var(--rs-large-spacing) * 2));
+      height: calc(100% - var(--rs-width) - (var(--rs-large-spacing) * 2));
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: relative;
     }
   }
 
