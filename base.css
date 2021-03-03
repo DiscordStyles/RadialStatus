@@ -71,35 +71,35 @@
   stroke: var(--rs-invisible-color);
 }
 #app-mount .wrapper-3t9DeA rect[x="16"] {
-  width: 24px;
-  height: 24px;
+  width: 50px;
+  height: 50px;
 }
 #app-mount .wrapper-3t9DeA rect[x="28"] {
-  width: 40px;
-  height: 40px;
+  width: 100px;
+  height: 100px;
   overflow: visible;
 }
-#app-mount .wrapper-3t9DeA[style*="width: 80px;"] {
+#app-mount .wrapper-3t9DeA[style*="width: 120px;"] {
   position: relative;
   margin-right: 0 !important;
 }
-#app-mount .wrapper-3t9DeA[style*="width: 80px;"] rect {
-  width: 80px;
-  height: 80px;
+#app-mount .wrapper-3t9DeA[style*="width: 120px;"] rect {
+  width: 120px;
+  height: 120px;
   pointer-events: none;
 }
-#app-mount .wrapper-3t9DeA[style*="width: 80px;"] img {
+#app-mount .wrapper-3t9DeA[style*="width: 120px;"] img {
   -webkit-clip-path: inset(calc(var(--rs-large-spacing) + 1px) calc(var(--rs-large-spacing) + 1px) round var(--rs-avatar-shape));
           clip-path: inset(calc(var(--rs-large-spacing) + 1px) calc(var(--rs-large-spacing) + 1px) round var(--rs-avatar-shape));
 }
-#app-mount .wrapper-3t9DeA[style*="width: 80px;"]:after {
+#app-mount .wrapper-3t9DeA[style*="width: 120px;"]:after {
   left: unset;
   right: -2px;
   top: unset;
   bottom: -2px;
   transform: none;
 }
-#app-mount .wrapper-3t9DeA:not([style*="width: 80px;"]) > svg > foreignObject:not(:only-child) img {
+#app-mount .wrapper-3t9DeA:not([style*="width: 120px;"]) > svg > foreignObject:not(:only-child) img {
   -webkit-clip-path: inset(calc(var(--rs-small-spacing) + 1px) calc(var(--rs-small-spacing) + 1px) round var(--rs-avatar-shape));
           clip-path: inset(calc(var(--rs-small-spacing) + 1px) calc(var(--rs-small-spacing) + 1px) round var(--rs-avatar-shape));
 }
@@ -152,10 +152,10 @@
   width: calc(100% + 4px);
 }
 #app-mount .wrapper-3t9DeA foreignObject[mask*=mobile][width="32"] img {
-  width: 32px;
+  width: 50px;
 }
 #app-mount .wrapper-3t9DeA foreignObject[mask*=mobile][width="80"] img {
-  width: 80px;
+  width: 120px;
 }
 #app-mount .wrapper-3t9DeA foreignObject[mask*=mobile]:after {
   content: "";
