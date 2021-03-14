@@ -83,10 +83,18 @@
   position: relative;
   margin-right: 0 !important;
 }
+#app-mount .wrapper-3t9DeA[style*="width: 80px;"] svg.cursorDefault-dsQJ1n rect {
+  x: -48;
+  y: -52;
+}
 #app-mount .wrapper-3t9DeA[style*="width: 80px;"] rect {
   width: 80px;
   height: 80px;
   pointer-events: none;
+}
+#app-mount .wrapper-3t9DeA[style*="width: 80px;"] rect[fill] {
+  rx: calc(var(--rs-avatar-shape) * 3.3) !important;
+  ry: calc(var(--rs-avatar-shape) * 3.3) !important;
 }
 #app-mount .wrapper-3t9DeA[style*="width: 80px;"] img {
   -webkit-clip-path: inset(calc(var(--rs-large-spacing) + 1px) calc(var(--rs-large-spacing) + 1px) round var(--rs-avatar-shape));

@@ -126,10 +126,18 @@
     &[style*="width: 80px;"] {
       position: relative;
       margin-right: 0 !important;
+      svg.cursorDefault-dsQJ1n rect {
+        x: -48;
+        y: -52;
+      }
       rect {
         width: 80px;
         height: 80px;
         pointer-events: none;
+        &[fill] {
+          rx: calc(var(--rs-avatar-shape) * 3.3) !important;
+          ry: calc(var(--rs-avatar-shape) * 3.3) !important;
+        }
       }
       img {
         clip-path: inset(calc(var(--rs-large-spacing) + 1px) calc(var(--rs-large-spacing) + 1px) round var(--rs-avatar-shape));
