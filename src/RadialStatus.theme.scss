@@ -23,7 +23,7 @@
 #app-mount {
   .wrapper-3t9DeA {
 
-    // Remove masks
+    // ~~REMOVE MASKS~~
     svg:not(:root) {
       overflow: visible;
     }
@@ -31,7 +31,7 @@
       mask: none;
     }
 
-    // Typing indicator
+    // ~~TYPING INDICATOR~~
     .dots-3Bkt3k circle {
       &:nth-child(1) {
         cy: -8 !important;
@@ -62,16 +62,19 @@
       y: 1;
     }
 
-    // Avatar shape
+    // ~~AVATAR SHAPE~~
     & > svg > foreignObject img {
       border-radius: var(--rs-avatar-shape);
     }
 
-    // Status ring
+    // ~~STATUS RINGS~~
+
+    // Updated status, user typing and bottom left avatar
     svg[width="25"][height="15"] > rect {
       rx: calc(var(--rs-avatar-shape) * 2) !important;
       ry: calc(var(--rs-avatar-shape) * 2) !important;
     }
+    // Overall status ring
     rect {
       x: 0;
       y: 0;
@@ -122,22 +125,20 @@
       }
     }
 
-    // Large profiles
+    // ~~LARGE PROFILES~~
     &[style*="width: 80px;"] {
       position: relative;
       margin-right: 0 !important;
       svg.cursorDefault-dsQJ1n rect {
         x: -48;
         y: -52;
+        rx: calc(var(--rs-avatar-shape) * 3.3) !important;
+        ry: calc(var(--rs-avatar-shape) * 3.3) !important;
       }
       rect {
         width: 80px;
         height: 80px;
         pointer-events: none;
-        &[fill] {
-          rx: calc(var(--rs-avatar-shape) * 3.3) !important;
-          ry: calc(var(--rs-avatar-shape) * 3.3) !important;
-        }
       }
       img {
         clip-path: inset(calc(var(--rs-large-spacing) + 1px) calc(var(--rs-large-spacing) + 1px) round var(--rs-avatar-shape));
@@ -152,7 +153,9 @@
       }
     }
 
-    // Small avatars (stop DBLib from affecting chat avatars)
+    // ~~PLUGIN FIXES~~
+
+    // Stop DBLib from affecting chat avatars
     &:not([style*="width: 80px;"]) > svg > foreignObject:not(:only-child) img {
       clip-path: inset(calc(var(--rs-small-spacing) + 1px) calc(var(--rs-small-spacing) + 1px) round var(--rs-avatar-shape));
     }
@@ -164,6 +167,7 @@
       position: relative;
       z-index: 0;
     }
+
     // Fixes for StatusEverywhere
     &[style*="width: 16px;"] {
       img {
@@ -175,7 +179,7 @@
     }
   }
 
-  // View profile overlay
+  // ~~VIEW PROFILE OVERLAY~~
   .avatarHint-1qgaV3 {
     foreignObject {
       mask: none;
@@ -200,7 +204,7 @@
     margin-right: 20px !important;
   }
 
-  // Offline
+  // ~~OFFLINE~~
   .memberOffline-2lN7gt img {
     clip-path: none !important;
   }
@@ -209,7 +213,7 @@
   }
 }
 
-// Online via mobile
+// ~~ONLINE VIA MOBILE~~
 #app-mount .wrapper-3t9DeA foreignObject[mask*="mobile"] {
   width: calc(100% + 4px);
   &[width="32"] img {
@@ -233,12 +237,12 @@
   }
 }
 
-// Remove inbuilt theme RadialStatus
+// ~~REMOVE INBUILT THEME RADIALSTATUS~~
 #app-mount .wrapper-3t9DeA:before {
   content: none !important;
 }
 
-// Fix ring clipping on friends tab
+// ~~FIX CLIPPING ON FRIENDS TAB~~
 .userInfo-2zN2z8,
 .peopleListItem-2nzedh {
   overflow: visible;
