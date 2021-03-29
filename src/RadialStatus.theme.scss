@@ -110,6 +110,7 @@
       &[fill="NaN"] {
         stroke: var(--rs-offline-color);
       }
+      &[fill="#747f8d"],
       &[mask*="invisible"],
       &[fill="rgba(116, 127, 141, 1)"] {
         stroke: var(--rs-invisible-color);
