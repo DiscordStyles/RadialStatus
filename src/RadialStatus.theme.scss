@@ -96,16 +96,16 @@
       &[fill="#faa61a"],
       &[fill="rgba(250, 166, 26, 1)"],
       &[mask*="idle"] {
-        stroke: var(--rs-idle-color);
+        stroke: var(--rs-idle-color) !important;
       }
       &[fill="#f04747"],
       &[fill="rgba(240, 71, 71, 1)"],
       &[mask*="dnd"] {
-        stroke: var(--rs-dnd-color);
+        stroke: var(--rs-dnd-color) !important;
       }
       &[fill="#593695"],
       &[mask*="streaming"] {
-        stroke: var(--rs-streaming-color);
+        stroke: var(--rs-streaming-color) !important;
       }
       &[fill="#747f8d"],
       &[mask*="offline"],

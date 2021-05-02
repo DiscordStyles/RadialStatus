@@ -56,13 +56,13 @@
   stroke: var(--rs-online-color);
 }
 #app-mount .wrapper-3t9DeA rect[fill="#faa61a"], #app-mount .wrapper-3t9DeA rect[fill="rgba(250, 166, 26, 1)"], #app-mount .wrapper-3t9DeA rect[mask*=idle] {
-  stroke: var(--rs-idle-color);
+  stroke: var(--rs-idle-color) !important;
 }
 #app-mount .wrapper-3t9DeA rect[fill="#f04747"], #app-mount .wrapper-3t9DeA rect[fill="rgba(240, 71, 71, 1)"], #app-mount .wrapper-3t9DeA rect[mask*=dnd] {
-  stroke: var(--rs-dnd-color);
+  stroke: var(--rs-dnd-color) !important;
 }
 #app-mount .wrapper-3t9DeA rect[fill="#593695"], #app-mount .wrapper-3t9DeA rect[mask*=streaming] {
-  stroke: var(--rs-streaming-color);
+  stroke: var(--rs-streaming-color) !important;
 }
 #app-mount .wrapper-3t9DeA rect[fill="#747f8d"], #app-mount .wrapper-3t9DeA rect[mask*=offline], #app-mount .wrapper-3t9DeA rect[fill=NaN] {
   stroke: var(--rs-offline-color);
