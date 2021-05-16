@@ -101,7 +101,8 @@
       }
       &[fill="#f04747"],
       &[fill="rgba(240, 71, 71, 1)"],
-      &[mask*="dnd"] {
+      &[mask*="dnd"],
+			&[fill="#ed4245"] {
         stroke: var(--rs-dnd-color) !important;
       }
       &[fill="#593695"],
