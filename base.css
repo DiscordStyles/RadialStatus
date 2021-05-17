@@ -118,6 +118,9 @@
   position: relative;
   z-index: 0;
 }
+#app-mount .wrapper-3t9DeA[data-bsi-status=dnd] rect[mask*=mobile] {
+  stroke: var(--rs-dnd-color);
+}
 #app-mount .wrapper-3t9DeA[style*="width: 16px;"] img {
   -webkit-clip-path: none !important;
           clip-path: none !important;

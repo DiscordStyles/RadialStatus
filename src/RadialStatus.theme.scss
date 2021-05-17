@@ -173,6 +173,11 @@
       z-index: 0;
     }
 
+		// BetterStatusIndicators
+		&[data-bsi-status="dnd"] rect[mask*="mobile"] {
+			stroke: var(--rs-dnd-color);
+		}
+
     // Fixes for StatusEverywhere
     &[style*="width: 16px;"] {
       img {
