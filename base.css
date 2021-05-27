@@ -128,11 +128,11 @@
 #app-mount .wrapper-3t9DeA[style*="width: 16px;"] rect {
   width: 16px !important;
 }
-#app-mount .avatarHint-1qgaV3 foreignObject {
+#app-mount .avatarHint-1E3LMl foreignObject {
   -webkit-mask: none;
           mask: none;
 }
-#app-mount .avatarHint-1qgaV3 .avatarHintInner-Dco91E {
+#app-mount .avatarHint-1E3LMl .avatarHintInner-2kMTo4 {
   border-radius: var(--rs-avatar-shape) !important;
   padding-top: 0;
   width: calc(100% - var(--rs-width) - (var(--rs-large-spacing) * 2));

@@ -3,7 +3,7 @@
  * @author Gibbu#1211
  * @version -dev
  * @description Changes the status icons to wrap around the avatar. Shape can be changed inside the theme file.
- * @source https://github.com/gibbubdstuff/RadialStatus
+ * @source https://github.com/DiscordStyles/RadialStatus
  * @website https://www.gibbu.me
 */
 
@@ -190,11 +190,11 @@
   }
 
   // ~~VIEW PROFILE OVERLAY~~
-  .avatarHint-1qgaV3 {
+  .avatarHint-1E3LMl {
     foreignObject {
       mask: none;
     }
-    .avatarHintInner-Dco91E {
+    .avatarHintInner-2kMTo4 {
       border-radius: var(--rs-avatar-shape) !important;
       padding-top: 0;
       width: calc(100% - var(--rs-width) - (var(--rs-large-spacing) * 2));
