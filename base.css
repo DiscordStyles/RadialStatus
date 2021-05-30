@@ -83,6 +83,9 @@
   position: relative;
   margin-right: 0 !important;
 }
+#app-mount .wrapper-3t9DeA[style*="width: 80px;"].avatar-22FtUu {
+  border-radius: var(--rs-avatar-shape);
+}
 #app-mount .wrapper-3t9DeA[style*="width: 80px;"] svg.cursorDefault-dsQJ1n rect {
   x: -48;
   y: -52;

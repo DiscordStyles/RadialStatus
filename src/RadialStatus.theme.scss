@@ -8,256 +8,259 @@
 */
 
 :root {
-  --rs-small-spacing: 2px;
-  --rs-large-spacing: 3px;
-  --rs-width: 2px;
-  --rs-avatar-shape: 50%;
-  --rs-online-color: #43b581;
-  --rs-idle-color: #faa61a;
-  --rs-dnd-color: #f04747;
-  --rs-offline-color: #636b75;
-  --rs-streaming-color: #643da7;
-  --rs-invisible-color: #747f8d;
-  --rs-phone-visible: block;
-  --rs-phone-color: var(--rs-online-color);
+	--rs-small-spacing: 2px;
+	--rs-large-spacing: 3px;
+	--rs-width: 2px;
+	--rs-avatar-shape: 50%;
+	--rs-online-color: #43b581;
+	--rs-idle-color: #faa61a;
+	--rs-dnd-color: #f04747;
+	--rs-offline-color: #636b75;
+	--rs-streaming-color: #643da7;
+	--rs-invisible-color: #747f8d;
+	--rs-phone-visible: block;
+	--rs-phone-color: var(--rs-online-color);
 }
 
 #app-mount {
-  .wrapper-3t9DeA {
+	.wrapper-3t9DeA {
 
-    // ~~REMOVE MASKS~~
-    svg:not(:root) {
-      overflow: visible;
-    }
-    foreignObject {
-      mask: none;
-    }
+		// ~~REMOVE MASKS~~
+		svg:not(:root) {
+			overflow: visible;
+		}
+		foreignObject {
+			mask: none;
+		}
 
-    // ~~TYPING INDICATOR~~
-    .dots-3Bkt3k circle {
-      &:nth-child(1) {
-        cy: -8 !important;
-        cx: -8.5 !important;
-      }
-      &:nth-child(2) {
-        cy: -8 !important;
-        cx: -2.25 !important;
-      }
-      &:nth-child(3) {
-        cy: -8 !important;
-        cx: 4 !important;
-      }
-    }
-    .mask-1l8v16 > rect[x="22"] {
-      x: 0;
-      y: 0;
-    }
-    .cursorDefault-dsQJ1n rect {
-      x: -49;
-      y: -53;
-    }
-    .pointerEvents-2zdfdO[x="14.5"] {
-      fill: rgba(0,0,0,0.5) !important;
-      width: 30px;
-      height: 30px;
-      x: 1;
-      y: 1;
-    }
+		// ~~TYPING INDICATOR~~
+		.dots-3Bkt3k circle {
+			&:nth-child(1) {
+				cy: -8 !important;
+				cx: -8.5 !important;
+			}
+			&:nth-child(2) {
+				cy: -8 !important;
+				cx: -2.25 !important;
+			}
+			&:nth-child(3) {
+				cy: -8 !important;
+				cx: 4 !important;
+			}
+		}
+		.mask-1l8v16 > rect[x="22"] {
+			x: 0;
+			y: 0;
+		}
+		.cursorDefault-dsQJ1n rect {
+			x: -49;
+			y: -53;
+		}
+		.pointerEvents-2zdfdO[x="14.5"] {
+			fill: rgba(0,0,0,0.5) !important;
+			width: 30px;
+			height: 30px;
+			x: 1;
+			y: 1;
+		}
 
-    // ~~AVATAR SHAPE~~
-    & > svg > foreignObject img {
-      border-radius: var(--rs-avatar-shape);
-    }
+		// ~~AVATAR SHAPE~~
+		& > svg > foreignObject img {
+			border-radius: var(--rs-avatar-shape);
+		}
 
-    // ~~STATUS RINGS~~
+		// ~~STATUS RINGS~~
 
-    // Updated status, user typing and bottom left avatar
-    svg[width="25"][height="15"] > rect {
-      rx: calc(var(--rs-avatar-shape) * 2) !important;
-      ry: calc(var(--rs-avatar-shape) * 2) !important;
-    }
-    // Overall status ring
-    rect {
-      x: 0;
-      y: 0;
-      width: 100%;
-      height: 100%;
-      mask: none;
-      display: block !important;
-      rx: var(--rs-avatar-shape) !important;
-      ry: var(--rs-avatar-shape) !important;
-      fill: transparent !important;
-      stroke-width: var(--rs-width);
-      &[fill="#43b581"],
-      &[fill="#3ba55c"],
-      &[fill="rgba(67, 181, 129, 1)"],
-      &[mask*="online"] {
-        stroke: var(--rs-online-color);
-      }
-      &[fill="#faa61a"],
-      &[fill="rgba(250, 166, 26, 1)"],
-      &[mask*="idle"] {
-        stroke: var(--rs-idle-color) !important;
-      }
-      &[fill="#f04747"],
-      &[fill="rgba(240, 71, 71, 1)"],
-      &[mask*="dnd"],
+		// Updated status, user typing and bottom left avatar
+		svg[width="25"][height="15"] > rect {
+			rx: calc(var(--rs-avatar-shape) * 2) !important;
+			ry: calc(var(--rs-avatar-shape) * 2) !important;
+		}
+		// Overall status ring
+		rect {
+			x: 0;
+			y: 0;
+			width: 100%;
+			height: 100%;
+			mask: none;
+			display: block !important;
+			rx: var(--rs-avatar-shape) !important;
+			ry: var(--rs-avatar-shape) !important;
+			fill: transparent !important;
+			stroke-width: var(--rs-width);
+			&[fill="#43b581"],
+			&[fill="#3ba55c"],
+			&[fill="rgba(67, 181, 129, 1)"],
+			&[mask*="online"] {
+				stroke: var(--rs-online-color);
+			}
+			&[fill="#faa61a"],
+			&[fill="rgba(250, 166, 26, 1)"],
+			&[mask*="idle"] {
+				stroke: var(--rs-idle-color) !important;
+			}
+			&[fill="#f04747"],
+			&[fill="rgba(240, 71, 71, 1)"],
+			&[mask*="dnd"],
 			&[fill="#ed4245"] {
-        stroke: var(--rs-dnd-color) !important;
-      }
-      &[fill="#593695"],
-      &[mask*="streaming"] {
-        stroke: var(--rs-streaming-color) !important;
-      }
-      &[fill="#747f8d"],
-      &[mask*="offline"],
-      &[fill="NaN"] {
-        stroke: var(--rs-offline-color);
-      }
-      &[fill="#747f8d"],
-      &[mask*="invisible"],
-      &[fill="rgba(116, 127, 141, 1)"] {
-        stroke: var(--rs-invisible-color);
-      }
-      &[x="16"] {
-        width: 24px;
-        height: 24px;
-      }
-      &[x="28"] {
-        width: 40px;
-        height: 40px;
-        overflow: visible;
-      }
-    }
+				stroke: var(--rs-dnd-color) !important;
+			}
+			&[fill="#593695"],
+			&[mask*="streaming"] {
+				stroke: var(--rs-streaming-color) !important;
+			}
+			&[fill="#747f8d"],
+			&[mask*="offline"],
+			&[fill="NaN"] {
+				stroke: var(--rs-offline-color);
+			}
+			&[fill="#747f8d"],
+			&[mask*="invisible"],
+			&[fill="rgba(116, 127, 141, 1)"] {
+				stroke: var(--rs-invisible-color);
+			}
+			&[x="16"] {
+				width: 24px;
+				height: 24px;
+			}
+			&[x="28"] {
+				width: 40px;
+				height: 40px;
+				overflow: visible;
+			}
+		}
 
-    // ~~LARGE PROFILES~~
-    &[style*="width: 80px;"] {
-      position: relative;
-      margin-right: 0 !important;
-      svg.cursorDefault-dsQJ1n rect {
-        x: -48;
-        y: -52;
-        rx: calc(var(--rs-avatar-shape) * 3.3) !important;
-        ry: calc(var(--rs-avatar-shape) * 3.3) !important;
-      }
-      rect {
-        width: 80px;
-        height: 80px;
-        pointer-events: none;
-      }
-      img {
-        clip-path: inset(calc(var(--rs-large-spacing) + 1px) calc(var(--rs-large-spacing) + 1px) round var(--rs-avatar-shape));
-      }
-      // Not sure what this does.
-      &:after {
-        left: unset;
-        right: -2px;
-        top: unset;
-        bottom: -2px;
-        transform: none;
-      }
-    }
+		// ~~LARGE PROFILES~~
+		&[style*="width: 80px;"] {
+			position: relative;
+			margin-right: 0 !important;
+			&.avatar-22FtUu {
+				border-radius: var(--rs-avatar-shape);
+			}
+			svg.cursorDefault-dsQJ1n rect {
+				x: -48;
+				y: -52;
+				rx: calc(var(--rs-avatar-shape) * 3.3) !important;
+				ry: calc(var(--rs-avatar-shape) * 3.3) !important;
+			}
+			rect {
+				width: 80px;
+				height: 80px;
+				pointer-events: none;
+			}
+			img {
+				clip-path: inset(calc(var(--rs-large-spacing) + 1px) calc(var(--rs-large-spacing) + 1px) round var(--rs-avatar-shape));
+			}
+			// Not sure what this does.
+			&:after {
+				left: unset;
+				right: -2px;
+				top: unset;
+				bottom: -2px;
+				transform: none;
+			}
+		}
 
-    // ~~PLUGIN FIXES~~
+		// ~~PLUGIN FIXES~~
 
-    // Stop DBLib from affecting chat avatars
-    &:not([style*="width: 80px;"]) > svg > foreignObject:not(:only-child) img {
-      clip-path: inset(calc(var(--rs-small-spacing) + 1px) calc(var(--rs-small-spacing) + 1px) round var(--rs-avatar-shape));
-    }
-    &[style*="width: 32px;"] rect {
-      width: 32px;
-      height: 32px;
-      x: -14.5;
-      y: -17;
-      position: relative;
-      z-index: 0;
-    }
+		// Stop DBLib from affecting chat avatars
+		&:not([style*="width: 80px;"]) > svg > foreignObject:not(:only-child) img {
+			clip-path: inset(calc(var(--rs-small-spacing) + 1px) calc(var(--rs-small-spacing) + 1px) round var(--rs-avatar-shape));
+		}
+		&[style*="width: 32px;"] rect {
+			width: 32px;
+			height: 32px;
+			x: -14.5;
+			y: -17;
+			position: relative;
+			z-index: 0;
+		}
 
 		// BetterStatusIndicators
 		&[data-bsi-status="dnd"] rect[mask*="mobile"] {
 			stroke: var(--rs-dnd-color);
 		}
 
-    // Fixes for StatusEverywhere
-    &[style*="width: 16px;"] {
-      img {
-        clip-path: none !important;
-      }
-      rect {
-        width: 16px !important;
-      }
-    }
-  }
+		// Fixes for StatusEverywhere
+		&[style*="width: 16px;"] {
+			img {
+				clip-path: none !important;
+			}
+			rect {
+				width: 16px !important;
+			}
+		}
+	}
 
-  // ~~VIEW PROFILE OVERLAY~~
-  .avatarHint-1E3LMl {
-    foreignObject {
-      mask: none;
-    }
-    .avatarHintInner-2kMTo4 {
-      border-radius: var(--rs-avatar-shape) !important;
-      padding-top: 0;
-      width: calc(100% - var(--rs-width) - (var(--rs-large-spacing) * 2));
-      height: calc(100% - var(--rs-width) - (var(--rs-large-spacing) * 2));
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      position: relative;
-    }
-  }
+	// ~~VIEW PROFILE OVERLAY~~
+	.avatarHint-1E3LMl {
+		foreignObject {
+			mask: none;
+		}
+		.avatarHintInner-2kMTo4 {
+			border-radius: var(--rs-avatar-shape) !important;
+			padding-top: 0;
+			width: calc(100% - var(--rs-width) - (var(--rs-large-spacing) * 2));
+			height: calc(100% - var(--rs-width) - (var(--rs-large-spacing) * 2));
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			position: relative;
+		}
+	}
 
-  // Not sure what these do.
-  .message-1PNnaP .mask-1l8v16 img {
-    clip-path: circle(calc(19px - var(--rs-small-spacing)));
-  }
-  .header-QKLPzZ .wrapper-3t9DeA {
-    margin-right: 20px !important;
-  }
+	// Not sure what these do.
+	.message-1PNnaP .mask-1l8v16 img {
+		clip-path: circle(calc(19px - var(--rs-small-spacing)));
+	}
+	.header-QKLPzZ .wrapper-3t9DeA {
+		margin-right: 20px !important;
+	}
 
-  // ~~OFFLINE~~
-  .memberOffline-2lN7gt img {
-    clip-path: none !important;
-  }
-  .offline-3nJYBR img {
-    clip-path: none !important;
-  }
+	// ~~OFFLINE~~
+	.memberOffline-2lN7gt img {
+		clip-path: none !important;
+	}
+	.offline-3nJYBR img {
+		clip-path: none !important;
+	}
 }
 
 // ~~ONLINE VIA MOBILE~~
 #app-mount .wrapper-3t9DeA foreignObject[mask*="mobile"] {
-  width: calc(100% + 4px);
-  &[width="32"] img {
-    width: 32px;
-  }
-  &[width="80"] img {
-    width: 80px;
-  }
-  &:after {
-    content: "";
-    display: var(--rs-phone-visible, block);
-    mask: url('data:image/svg+xml; utf-8,<svg aria-hidden="true" focusable="false" data-prefix="fas" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z"></path></svg>') center/8px no-repeat;
-    position: absolute;
-    width: 10px;
-    height: 14px;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-    background: var(--rs-phone-color, var(--rs-online-color));
-    z-index: 1;
-  }
+	width: calc(100% + 4px);
+	&[width="32"] img {
+		width: 32px;
+	}
+	&[width="80"] img {
+		width: 80px;
+	}
+	&:after {
+		content: "";
+		display: var(--rs-phone-visible, block);
+		mask: url('data:image/svg+xml; utf-8,<svg aria-hidden="true" focusable="false" data-prefix="fas" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z"></path></svg>') center/8px no-repeat;
+		position: absolute;
+		width: 10px;
+		height: 14px;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 0;
+		background: var(--rs-phone-color, var(--rs-online-color));
+		z-index: 1;
+	}
 
-  & + rect {
-    stroke: var(--rs-phone-color, var(--rs-online-color));
-  }
+	& + rect {
+		stroke: var(--rs-phone-color, var(--rs-online-color));
+	}
 }
 
 // ~~REMOVE INBUILT THEME RADIALSTATUS~~
 #app-mount .wrapper-3t9DeA:before {
-  content: none !important;
+	content: none !important;
 }
 
 // ~~FIX CLIPPING ON FRIENDS TAB~~
 .userInfo-2zN2z8,
 .peopleListItem-2nzedh {
-  overflow: visible;
+	overflow: visible;
 }
