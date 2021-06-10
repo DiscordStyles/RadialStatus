@@ -83,7 +83,7 @@
   position: relative;
   margin-right: 0 !important;
 }
-#app-mount .wrapper-3t9DeA[style*="width: 80px;"].avatar-22FtUu {
+#app-mount .wrapper-3t9DeA[style*="width: 80px;"].avatar-37jOim {
   border-radius: var(--rs-avatar-shape);
 }
 #app-mount .wrapper-3t9DeA[style*="width: 80px;"] svg.cursorDefault-dsQJ1n rect {
@@ -131,11 +131,11 @@
 #app-mount .wrapper-3t9DeA[style*="width: 16px;"] rect {
   width: 16px !important;
 }
-#app-mount .avatarHint-1E3LMl foreignObject {
+#app-mount .avatarHint-2A3RNb foreignObject {
   -webkit-mask: none;
           mask: none;
 }
-#app-mount .avatarHint-1E3LMl .avatarHintInner-2kMTo4 {
+#app-mount .avatarHint-2A3RNb .avatarHintInner-1TvA8u {
   border-radius: var(--rs-avatar-shape) !important;
   padding-top: 0;
   width: calc(100% - var(--rs-width) - (var(--rs-large-spacing) * 2));
