@@ -91,18 +91,21 @@
 			&[fill="#43b581"],
 			&[fill="#3ba55c"],
 			&[fill="rgba(67, 181, 129, 1)"],
-			&[mask*="online"] {
+			&[mask*="online"],
+			&[fill*="hsl(139"] {
 				stroke: var(--rs-online-color);
 			}
 			&[fill="#faa61a"],
 			&[fill="rgba(250, 166, 26, 1)"],
-			&[mask*="idle"] {
+			&[mask*="idle"],
+			&[fill*="hsl(38"] {
 				stroke: var(--rs-idle-color) !important;
 			}
 			&[fill="#f04747"],
 			&[fill="rgba(240, 71, 71, 1)"],
+			&[fill="#ed4245"],
 			&[mask*="dnd"],
-			&[fill="#ed4245"] {
+			&[fill*="hsl(359"] {
 				stroke: var(--rs-dnd-color) !important;
 			}
 			&[fill="#593695"],
@@ -116,7 +119,8 @@
 			}
 			&[fill="#747f8d"],
 			&[mask*="invisible"],
-			&[fill="rgba(116, 127, 141, 1)"] {
+			&[fill="rgba(116, 127, 141, 1)"],
+			&[fill*="hsl(214"] {
 				stroke: var(--rs-invisible-color);
 			}
 			&[x="16"] {
@@ -133,7 +137,6 @@
 		// ~~LARGE PROFILES~~
 		&[style*="width: 80px;"] {
 			position: relative;
-			margin-right: 0 !important;
 			&.avatar-37jOim {
 				border-radius: var(--rs-avatar-shape);
 			}
