@@ -108,7 +108,14 @@
   -webkit-transform: none;
           transform: none;
 }
-#app-mount .wrapper-3t9DeA:not([style*="width: 80px;"]) > svg > foreignObject:not(:only-child) img {
+#app-mount .wrapper-3t9DeA[style*="width: 120px;"] > svg > rect {
+  width: calc(100% - 18px);
+}
+#app-mount .wrapper-3t9DeA[style*="width: 120px;"] img {
+  -webkit-clip-path: inset(calc(var(--rs-large-spacing) + 1px) calc(var(--rs-large-spacing) + 1px) round var(--rs-avatar-shape));
+          clip-path: inset(calc(var(--rs-large-spacing) + 1px) calc(var(--rs-large-spacing) + 1px) round var(--rs-avatar-shape));
+}
+#app-mount .wrapper-3t9DeA:not([style*="width: 80px;"]):not([style*="width: 120px;"]) > svg > foreignObject:not(:only-child) img {
   -webkit-clip-path: inset(calc(var(--rs-small-spacing) + 1px) calc(var(--rs-small-spacing) + 1px) round var(--rs-avatar-shape));
           clip-path: inset(calc(var(--rs-small-spacing) + 1px) calc(var(--rs-small-spacing) + 1px) round var(--rs-avatar-shape));
 }
@@ -148,9 +155,6 @@
 #app-mount .message-1PNnaP .mask-1l8v16 img {
   -webkit-clip-path: circle(calc(19px - var(--rs-small-spacing)));
           clip-path: circle(calc(19px - var(--rs-small-spacing)));
-}
-#app-mount .header-QKLPzZ .wrapper-3t9DeA {
-  margin-right: 20px !important;
 }
 #app-mount .memberOffline-2lN7gt img {
   -webkit-clip-path: none !important;

@@ -18,8 +18,8 @@
 	--rs-offline-color: #636b75;
 	--rs-streaming-color: #643da7;
 	--rs-invisible-color: #747f8d;
-	--rs-phone-visible: block;
 	--rs-phone-color: var(--rs-online-color);
+	--rs-phone-visible: block;
 }
 
 #app-mount {
@@ -134,7 +134,7 @@
 			}
 		}
 
-		// ~~LARGE PROFILES~~
+		// ~~User popout~~
 		&[style*="width: 80px;"] {
 			position: relative;
 			&.avatar-37jOim {
@@ -164,10 +164,20 @@
 			}
 		}
 
+		// ~~User profile~~
+		&[style*="width: 120px;"] {
+			& > svg > rect {
+				width: calc(100% - 18px);
+			}
+			img {
+				clip-path: inset(calc(var(--rs-large-spacing) + 1px) calc(var(--rs-large-spacing) + 1px) round var(--rs-avatar-shape));
+			}
+		}
+
 		// ~~PLUGIN FIXES~~
 
 		// Stop DBLib from affecting chat avatars
-		&:not([style*="width: 80px;"]) > svg > foreignObject:not(:only-child) img {
+		&:not([style*="width: 80px;"]):not([style*="width: 120px;"]) > svg > foreignObject:not(:only-child) img {
 			clip-path: inset(calc(var(--rs-small-spacing) + 1px) calc(var(--rs-small-spacing) + 1px) round var(--rs-avatar-shape));
 		}
 		&[style*="width: 32px;"] rect {
@@ -215,9 +225,6 @@
 	// Not sure what these do.
 	.message-1PNnaP .mask-1l8v16 img {
 		clip-path: circle(calc(19px - var(--rs-small-spacing)));
-	}
-	.header-QKLPzZ .wrapper-3t9DeA {
-		margin-right: 20px !important;
 	}
 
 	// ~~OFFLINE~~
