@@ -79,9 +79,6 @@
   height: 40px;
   overflow: visible;
 }
-#app-mount .wrapper-3t9DeA[style*="width: 80px;"] {
-  position: relative;
-}
 #app-mount .wrapper-3t9DeA[style*="width: 80px;"].avatar-37jOim {
   border-radius: var(--rs-avatar-shape);
 }
