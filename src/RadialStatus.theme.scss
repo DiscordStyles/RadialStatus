@@ -165,6 +165,10 @@
 
 		// ~~User profile~~
 		&[style*="width: 120px;"] {
+			&.avatar-AvHqJA {
+				border-radius: var(--rs-avatar-shape);
+			}
+
 			& > svg > rect {
 				width: calc(100% - 18px);
 			}

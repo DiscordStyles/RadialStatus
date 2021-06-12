@@ -105,6 +105,10 @@
   -webkit-transform: none;
           transform: none;
 }
+#app-mount .wrapper-3t9DeA[style*="width: 120px;"].avatar-AvHqJA {
+  border-radius: var(--rs-avatar-shape);
+}
+
 #app-mount .wrapper-3t9DeA[style*="width: 120px;"] > svg > rect {
   width: calc(100% - 18px);
 }
