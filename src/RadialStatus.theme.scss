@@ -177,6 +177,11 @@
 			}
 		}
 
+		// ~~Profile Customization example~~
+		&[style*="width: 80px;"].avatar-2PN2-j {
+			border-radius: var(--rs-avatar-shape);
+		}
+
 		// ~~PLUGIN FIXES~~
 
 		// Stop DBLib from affecting chat avatars
