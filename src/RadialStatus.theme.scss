@@ -16,7 +16,7 @@
 	--rs-medium-width: 3px;
 	--rs-large-width: 3px;
 
-	--rs-avatar-shape: 50%;
+	--rs-avatar-shape: 0%;
 
 	--rs-online-color: #43b581;
 	--rs-idle-color: #faa61a;
@@ -30,11 +30,12 @@
 }
 
 :root {
-	--rs-version: '2.0.0';
+	--rs-version: '2.0.1';
 }
 
 #app-mount {
 	.wrapper-3t9DeA {
+		border-radius: var(--rs-avatar-shape);
 
 		// Remove masks
 		svg:not(:root) {

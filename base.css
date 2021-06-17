@@ -1,7 +1,10 @@
 :root {
-  --rs-version: "2.0.0";
+  --rs-version: "2.0.1";
 }
 
+#app-mount .wrapper-3t9DeA {
+  border-radius: var(--rs-avatar-shape);
+}
 #app-mount .wrapper-3t9DeA svg:not(:root) {
   overflow: visible;
 }
