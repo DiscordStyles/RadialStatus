@@ -30,7 +30,7 @@
 }
 
 :root {
-	--rs-version: '2.0.1';
+	--rs-version: '2.0.2';
 }
 
 #app-mount {
@@ -97,7 +97,7 @@
 			display: block;
 			rx: var(--rs-avatar-shape);
 			ry: var(--rs-avatar-shape);
-			fill: transparent;
+			fill: transparent !important;
 			stroke-width: var(--rs-small-width);
 			&[fill="#43b581"],
 			&[fill="#3ba55c"],

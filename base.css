@@ -1,5 +1,5 @@
 :root {
-  --rs-version: "2.0.1";
+  --rs-version: "2.0.2";
 }
 
 #app-mount .wrapper-3t9DeA {
@@ -56,7 +56,7 @@
   display: block;
   rx: var(--rs-avatar-shape);
   ry: var(--rs-avatar-shape);
-  fill: transparent;
+  fill: transparent !important;
   stroke-width: var(--rs-small-width);
 }
 #app-mount .wrapper-3t9DeA rect[fill="#43b581"], #app-mount .wrapper-3t9DeA rect[fill="#3ba55c"], #app-mount .wrapper-3t9DeA rect[fill="rgba(67, 181, 129, 1)"], #app-mount .wrapper-3t9DeA rect[mask*=online], #app-mount .wrapper-3t9DeA rect[fill*="hsl(139"] {
