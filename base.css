@@ -1,5 +1,5 @@
 :root {
-  --rs-version: "2.0.2";
+  --rs-version: "2.0.3";
 }
 
 #app-mount .wrapper-3t9DeA {
@@ -42,7 +42,7 @@
   rx: calc(var(--rs-avatar-shape) * 2) !important;
   ry: calc(var(--rs-avatar-shape) * 2) !important;
 }
-#app-mount .wrapper-3t9DeA[style*="80px;"] rect, #app-mount .wrapper-3t9DeA[style*="120px;"] rect {
+#app-mount .wrapper-3t9DeA[style*="80px"] svg.cursorDefault-dsQJ1n rect, #app-mount .wrapper-3t9DeA[style*="120px"] svg.cursorDefault-dsQJ1n rect {
   ry: calc(var(--rs-avatar-shape) * 3.3);
   rx: calc(var(--rs-avatar-shape) * 3.3);
 }
@@ -86,7 +86,7 @@
   height: 40px;
   overflow: visible;
 }
-#app-mount .wrapper-3t9DeA[style*="32px;"] rect {
+#app-mount .wrapper-3t9DeA[style*="32px"] rect {
   width: 32px;
   height: 32px;
   x: -14.5;
@@ -109,7 +109,7 @@
 }
 #app-mount .wrapper-3t9DeA[style*="120px"] svg.cursorDefault-dsQJ1n rect {
   x: -70;
-  y: -75;
+  y: -76;
 }
 #app-mount .wrapper-3t9DeA[style*="120px"] rect {
   width: 120px;

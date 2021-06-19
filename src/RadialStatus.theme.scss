@@ -16,7 +16,7 @@
 	--rs-medium-width: 3px;
 	--rs-large-width: 3px;
 
-	--rs-avatar-shape: 0%;
+	--rs-avatar-shape: 50%;
 
 	--rs-online-color: #43b581;
 	--rs-idle-color: #faa61a;
@@ -30,7 +30,7 @@
 }
 
 :root {
-	--rs-version: '2.0.2';
+	--rs-version: '2.0.3';
 }
 
 #app-mount {
@@ -80,8 +80,8 @@
 			rx: calc(var(--rs-avatar-shape) * 2) !important;
 			ry: calc(var(--rs-avatar-shape) * 2) !important;
 		}
-		&[style*="80px;"], &[style*="120px;"] {
-			rect {
+		&[style*="80px"], &[style*="120px"] {
+			svg.cursorDefault-dsQJ1n rect {
 				ry: calc(var(--rs-avatar-shape) * 3.3);
 				rx: calc(var(--rs-avatar-shape) * 3.3);
 			}
@@ -146,7 +146,7 @@
 		}
 
 		// Members list
-		&[style*="32px;"] rect {
+		&[style*="32px"] rect {
 			width: 32px;
 			height: 32px;
 			x: -14.5;
@@ -157,6 +157,7 @@
 
 		// Medium ring (user popout)
 		&[style*="80px"] {
+			// Updated status
 			svg.cursorDefault-dsQJ1n rect {
 				x: -48;
 				y: -52;
@@ -173,9 +174,10 @@
 		
 		// Large ring (user profile)
 		&[style*="120px"] {
+			// Updated status
 			svg.cursorDefault-dsQJ1n rect {
 				x: -70;
-				y: -75;
+				y: -76;
 			}
 			rect {
 				width: 120px;
