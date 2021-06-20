@@ -30,7 +30,7 @@
 }
 
 :root {
-	--rs-version: '2.0.3';
+	--rs-version: '2.0.4';
 }
 
 #app-mount {
@@ -189,9 +189,19 @@
 			}
 		}
 
-		// Plugin fixes
-		&:not([style*="80px;"]):not([style*="120px;"]) > svg > foreignObject:not(:only-child) img {
+		// Fixes DBFBD chat avatars
+		&:not([style*="80px;"]):not([style*="120px;"]):not([style*="16px"]) > svg > foreignObject:not(:only-child) img {
 			clip-path: inset(calc(var(--rs-small-spacing) + 1px) calc(var(--rs-small-spacing) + 1px) round var(--rs-avatar-shape));
+		}
+
+		// UserTypingAvatars
+		&[style="width: 16px; height: 16px;"] {
+			rect {
+				display: none;
+			}
+			img {
+				clip-path: none;
+			}
 		}
 
 		// Mobile indicator
