@@ -1,5 +1,5 @@
 :root {
-  --rs-version: "2.0.4";
+  --rs-version: "2.0.5";
 }
 
 #app-mount .wrapper-3t9DeA {
@@ -93,6 +93,14 @@
   y: -17;
   position: relative;
   z-index: 0;
+}
+#app-mount .wrapper-3t9DeA[style*="40px"] > svg > svg rect {
+  width: 40px;
+  height: 40px;
+  x: -19;
+  y: -20;
+  ry: calc(var(--rs-avatar-shape) * 3.3);
+  rx: calc(var(--rs-avatar-shape) * 3.3);
 }
 #app-mount .wrapper-3t9DeA[style*="80px"] svg.cursorDefault-dsQJ1n rect {
   x: -48;
