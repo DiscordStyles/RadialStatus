@@ -1,5 +1,5 @@
 :root {
-  --rs-version: "2.0.5";
+  --rs-version: "2.0.6";
 }
 
 #app-mount .wrapper-3t9DeA {
@@ -101,6 +101,9 @@
   y: -20;
   ry: calc(var(--rs-avatar-shape) * 3.3);
   rx: calc(var(--rs-avatar-shape) * 3.3);
+}
+#app-mount .wrapper-3t9DeA[style*="40px"] foreignObject[mask*=mobile] img {
+  width: calc(100% - 12px);
 }
 #app-mount .wrapper-3t9DeA[style*="80px"] svg.cursorDefault-dsQJ1n rect {
   x: -48;

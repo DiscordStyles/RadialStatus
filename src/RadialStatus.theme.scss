@@ -30,7 +30,7 @@
 }
 
 :root {
-	--rs-version: '2.0.5';
+	--rs-version: '2.0.6';
 }
 
 #app-mount {
@@ -164,6 +164,9 @@
 				y: -20;
 				ry: calc(var(--rs-avatar-shape) * 3.3);
 				rx: calc(var(--rs-avatar-shape) * 3.3);
+			}
+			foreignObject[mask*="mobile"] img {
+				width: calc(100% - 12px);
 			}
 		}
 
