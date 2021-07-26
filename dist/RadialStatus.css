@@ -163,8 +163,7 @@
   width: 10px;
   height: 14px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   right: 0;
   background: var(--rs-phone-color, var(--rs-online-color));
   z-index: 1;
@@ -183,8 +182,7 @@
   height: calc(100% - var(--rs-medium-width) - var(--rs-medium-spacing) + 1px * 2);
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   position: relative;
 }
 #app-mount .memberOffline-2lN7gt img {
