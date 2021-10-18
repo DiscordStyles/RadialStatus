@@ -194,8 +194,8 @@
 #app-mount .avatarHintInner-1TvA8u {
   border-radius: var(--rs-avatar-shape) !important;
   padding-top: 0;
-  width: calc(100% - var(--rs-medium-width) - var(--rs-medium-spacing) + 1px * 2);
-  height: calc(100% - var(--rs-medium-width) - var(--rs-medium-spacing) + 1px * 2);
+  width: calc(100% - var(--rs-medium-width) - var(--rs-medium-spacing) + 2px);
+  height: calc(100% - var(--rs-medium-width) - var(--rs-medium-spacing) + 2px);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
