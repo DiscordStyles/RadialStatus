@@ -9,7 +9,7 @@ This will help you get started.
 - Basic knowledge of the terminal/command prompt.
 
 Install Dependencies:  
-Open a terminal/command prompt and use the following command: `npm install` in the Slate folder.
+Open a terminal/command prompt and use the following command: `npm install` in the RadialStatus folder.
 
 ## Development
 Run the `dev` script with: `npm run dev`.  
