@@ -1,9 +1,9 @@
 :root {
-	--rs-version: '2.0.7';
+	--rs-version: '2.0.8';
 }
 
 #app-mount {
-	.wrapper-1VLyxH:not(.avatar-1EWyVD) {
+	.wrapper-1VLyxH {
 		border-radius: var(--rs-avatar-shape);
 	
 		// Remove masks
@@ -236,7 +236,19 @@
 		}
 	}
 
-
+	// Bottom left avatar, speaking in VC
+	.avatarStack-3vfSFa {
+		position: relative;
+	}
+	.avatarSpeaking-33RRJU {
+		position: absolute;
+		top: 2px;
+		left: 2px;
+		width: calc(100% - 4px);
+		height: calc(100% - 4px);
+		border-radius: var(--rs-avatar-shape);
+		box-shadow: inset 0 0 0 2px var(--rs-self-speaking), inset 0 0 0 3px var(--background-secondary);
+	}
 	
 	// Mobile and typing fix for status everywhere plugins
 	.message-2CShn3 .wrapper-1VLyxH {
