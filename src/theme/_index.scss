@@ -247,7 +247,7 @@
 		width: calc(100% - 4px);
 		height: calc(100% - 4px);
 		border-radius: var(--rs-avatar-shape);
-		box-shadow: inset 0 0 0 2px var(--rs-self-speaking), inset 0 0 0 3px var(--background-secondary);
+		box-shadow: inset 0 0 0 2px var(--rs-self-speaking-colour, #57d39b), inset 0 0 0 3px var(--background-secondary);
 	}
 	
 	// Mobile and typing fix for status everywhere plugins
