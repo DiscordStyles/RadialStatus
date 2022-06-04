@@ -35,7 +35,7 @@
   --rs-offline-color: #636b75; /* Colour for offline status */
   --rs-streaming-color: #643da7; /* Colour for streaming status */
   --rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
-  --rs-self-speaking: #57d39b; /* Colour for speaking ring in the bottom left while in a voice chat/call */
+  --rs-self-speaking-color: #57d39b; /* Colour for speaking ring in the bottom left while in a voice chat/call */
   --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone  */
   /*
    * Others
