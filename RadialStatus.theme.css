@@ -8,7 +8,8 @@
  * @website https://www.gibbu.me
 */
 
-@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+@import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
+
 :root {
   /*
    * Spacing
