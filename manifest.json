@@ -1,9 +1,9 @@
 {
-    "name": "RadialStatus",
-    "description": "Changes the status icons to wrap around the avatar. Shape can be changed inside the theme file",
-    "version": "1.0.0",
-    "author": "Gibbu#1211",
-    "theme": "dist/RadialStatus.theme.css",
-    "consent": ["ext_listing"],
-    "license": "MIT"
+	"name": "RadialStatus",
+	"description": "Changes the status icons to wrap around the avatar. Shape can be changed inside the theme file",
+	"version": "1.0.0",
+	"author": "Gibbu#1211",
+	"theme": "dist/RadialStatus.theme.css",
+	"consent": ["ext_listing"],
+	"license": "MIT"
 }
