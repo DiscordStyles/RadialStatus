@@ -83,24 +83,28 @@
 			&[fill='#3ba55c'],
 			&[fill='rgba(67, 181, 129, 1)'],
 			&[mask*='online'],
-			&[fill*='hsl(139'] {
+			&[fill*='hsl(139'],
+			&[fill*='var(--status-green'] {
 				stroke: var(--rs-online-color);
 			}
 			&[fill='#faa61a'],
 			&[fill='rgba(250, 166, 26, 1)'],
 			&[mask*='idle'],
-			&[fill*='hsl(38'] {
+			&[fill*='hsl(38'],
+			&[fill*='var(--status-yellow'] {
 				stroke: var(--rs-idle-color);
 			}
 			&[fill='#f04747'],
 			&[fill='rgba(240, 71, 71, 1)'],
 			&[fill='#ed4245'],
 			&[mask*='dnd'],
-			&[fill*='hsl(359'] {
+			&[fill*='hsl(359'],
+			&[fill*='var(--status-red'] {
 				stroke: var(--rs-dnd-color);
 			}
 			&[fill='#593695'],
-			&[mask*='streaming'] {
+			&[mask*='streaming'],
+			&[fill*='var(--status-purple'] {
 				stroke: var(--rs-streaming-color);
 			}
 			&[fill='#747f8d'],
