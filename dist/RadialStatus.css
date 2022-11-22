@@ -81,7 +81,7 @@
 #app-mount .wrapper-1VLyxH rect[fill="#747f8d"], #app-mount .wrapper-1VLyxH rect[mask*=offline], #app-mount .wrapper-1VLyxH rect[fill=NaN] {
   stroke: var(--rs-offline-color);
 }
-#app-mount .wrapper-1VLyxH rect[fill="#747f8d"], #app-mount .wrapper-1VLyxH rect[mask*=invisible], #app-mount .wrapper-1VLyxH rect[fill="rgba(116, 127, 141, 1)"], #app-mount .wrapper-1VLyxH rect[fill*="hsl(214"] {
+#app-mount .wrapper-1VLyxH rect[fill="#747f8d"], #app-mount .wrapper-1VLyxH rect[mask*=invisible], #app-mount .wrapper-1VLyxH rect[fill="rgba(116, 127, 141, 1)"], #app-mount .wrapper-1VLyxH rect[fill*="hsl(214"], #app-mount .wrapper-1VLyxH rect[fill="var(--status-grey-500)"] {
   stroke: var(--rs-invisible-color);
 }
 #app-mount .wrapper-1VLyxH rect[x="16"] {
