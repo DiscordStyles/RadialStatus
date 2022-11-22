@@ -115,7 +115,8 @@
 			&[fill='#747f8d'],
 			&[mask*='invisible'],
 			&[fill='rgba(116, 127, 141, 1)'],
-			&[fill*='hsl(214'] {
+			&[fill*='hsl(214'],
+			&[fill='var(--status-grey-500)'] {
 				stroke: var(--rs-invisible-color);
 			}
 			&[x='16'] {
