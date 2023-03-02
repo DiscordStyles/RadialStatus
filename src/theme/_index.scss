@@ -3,7 +3,7 @@
 }
 
 #app-mount {
-	.wrapper-1VLyxH {
+	.wrapper-3Un6-K {
 		border-radius: var(--rs-avatar-shape);
 
 		// Remove masks
@@ -15,7 +15,7 @@
 		}
 
 		// Typing indicator
-		.dots-1BwzZQ circle {
+		.dots-1k2MxY circle {
 			cy: -8 !important;
 			&:nth-child(1) {
 				cx: -8.5 !important;
@@ -27,7 +27,7 @@
 				cx: 4 !important;
 			}
 		}
-		.mask-1FEkla {
+		.mask-1y0tyc {
 			& > rect[x='22'] {
 				x: 0;
 				y: 0;
@@ -40,7 +40,7 @@
 				cy: 20;
 			}
 		}
-		.pointerEvents-9SZWKj[x='14.5'] {
+		.pointerEvents-2KjWnj[x='14.5'] {
 			fill: rgba(0, 0, 0, 0.5) !important;
 			width: 30px;
 			height: 30px;
@@ -61,7 +61,7 @@
 		}
 		&[style*='80px'],
 		&[style*='120px'] {
-			svg.cursorDefault--wfhy5 rect {
+			svg.cursorDefault-2M8ZNp rect {
 				ry: calc(var(--rs-avatar-shape) * 3.3);
 				rx: calc(var(--rs-avatar-shape) * 3.3);
 			}
@@ -162,7 +162,7 @@
 		// Medium ring (user popout)
 		&[style*='80px'] {
 			// Updated status
-			svg.cursorDefault--wfhy5 rect {
+			svg.cursorDefault-2M8ZNp rect {
 				x: -48;
 				y: -52;
 			}
@@ -182,7 +182,7 @@
 		// Large ring (user profile)
 		&[style*='120px'] {
 			// Updated status
-			svg.cursorDefault--wfhy5 rect {
+			svg.cursorDefault-2M8ZNp rect {
 				x: -70;
 				y: -76;
 			}
@@ -200,7 +200,7 @@
 		}
 
 		// Fixes DBFBD chat avatars
-		&:not([style*='80px;']):not([style*='120px;']):not([style*='16px'])
+		&:not([style*='80px;'], [style*='120px;'], [style*='16px'])
 			> svg
 			> foreignObject:not(:only-child)
 			img {
@@ -285,7 +285,7 @@
 	}
 
 	// Mobile and typing fix for status everywhere plugins
-	.message-2CShn3 .wrapper-1VLyxH {
+	.message-2CShn3 .wrapper-3Un6-K {
 		foreignObject[mask*='mobile'] {
 			width: calc(100% + 3px);
 		}
@@ -318,12 +318,12 @@
 	}
 
 	// Webhook popout
-	.avatarWrapperNonUserBot-3fzpUZ .wrapper-1VLyxH img {
+	.avatarWrapperNonUserBot-3fzpUZ .wrapper-3Un6-K img {
 		clip-path: none !important;
 	}
 
 	// Fix clipping on user friends tab
-	.userInfo-2WpsYG .wrapper-1VLyxH {
+	.userInfo-2WpsYG .wrapper-3Un6-K {
 		margin-top: 1px;
 		margin-left: 1px;
 	}
