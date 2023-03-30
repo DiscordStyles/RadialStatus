@@ -1,5 +1,5 @@
 :root {
-	--rs-version: '2.0.8';
+	--rs-version: '2.0.9';
 }
 
 #app-mount {
@@ -9,6 +9,7 @@
 		// Remove masks
 		svg:not(:root) {
 			overflow: visible;
+			contain: none;
 		}
 		foreignObject {
 			mask: none;
