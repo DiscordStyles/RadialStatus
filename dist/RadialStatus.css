@@ -1,5 +1,5 @@
 :root {
-  --rs-version: "2.0.8";
+  --rs-version: "2.0.9";
 }
 
 #app-mount .wrapper-3Un6-K {
@@ -7,6 +7,7 @@
 }
 #app-mount .wrapper-3Un6-K svg:not(:root) {
   overflow: visible;
+  contain: none;
 }
 #app-mount .wrapper-3Un6-K foreignObject {
   -webkit-mask: none;
