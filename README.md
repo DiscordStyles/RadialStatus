@@ -7,7 +7,8 @@ Changes the status icons to wrap around the avatar. Shape can be changed inside 
 ## Download
 
 BetterDiscord Download: [https://betterdiscord.app/theme/RadialStatus](https://betterdiscord.app/Download?id=32)  
-Powercord Install: `git clone https://github.com/DiscordStyles/RadialStatus --branch deploy`
+Powercord Install: `git clone https://github.com/DiscordStyles/RadialStatus --branch deploy`  
+Vencord link: `https://raw.githubusercontent.com/DiscordStyles/RadialStatus/deploy/RadialStatus.theme.css`
 
 ## Contributing
 
