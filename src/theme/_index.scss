@@ -113,6 +113,7 @@
 			}
 			&[fill='#747f8d'],
 			&[mask*='offline'],
+			&[fill='#80848e'],
 			&[fill='NaN'] {
 				stroke: var(--rs-offline-color);
 			}
@@ -191,6 +192,7 @@
 				width: 120px;
 				height: 120px;
 				stroke-width: var(--rs-large-width);
+				pointer-events: none;
 			}
 			img {
 				clip-path: inset(
