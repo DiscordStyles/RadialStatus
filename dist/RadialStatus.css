@@ -79,7 +79,7 @@
 #app-mount .wrapper-3Un6-K rect[fill="#593695"], #app-mount .wrapper-3Un6-K rect[mask*=streaming], #app-mount .wrapper-3Un6-K rect[fill*="var(--status-purple"] {
   stroke: var(--rs-streaming-color);
 }
-#app-mount .wrapper-3Un6-K rect[fill="#747f8d"], #app-mount .wrapper-3Un6-K rect[mask*=offline], #app-mount .wrapper-3Un6-K rect[fill=NaN] {
+#app-mount .wrapper-3Un6-K rect[fill="#747f8d"], #app-mount .wrapper-3Un6-K rect[mask*=offline], #app-mount .wrapper-3Un6-K rect[fill="#80848e"], #app-mount .wrapper-3Un6-K rect[fill=NaN] {
   stroke: var(--rs-offline-color);
 }
 #app-mount .wrapper-3Un6-K rect[fill="#747f8d"], #app-mount .wrapper-3Un6-K rect[mask*=invisible], #app-mount .wrapper-3Un6-K rect[fill="rgba(116, 127, 141, 1)"], #app-mount .wrapper-3Un6-K rect[fill*="hsl(214"], #app-mount .wrapper-3Un6-K rect[fill="var(--status-grey-500)"], #app-mount .wrapper-3Un6-K rect[fill="#82858f"] {
@@ -134,6 +134,7 @@
   width: 120px;
   height: 120px;
   stroke-width: var(--rs-large-width);
+  pointer-events: none;
 }
 #app-mount .wrapper-3Un6-K[style*="120px"] img {
   -webkit-clip-path: inset(calc(var(--rs-large-spacing) + 1px) calc(var(--rs-large-spacing) + 1px) round var(--rs-avatar-shape));
