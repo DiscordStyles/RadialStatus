@@ -3,7 +3,7 @@
 }
 
 #app-mount {
-	.wrapper_edb6e0 {
+	.wrapper__3ed10 {
 		border-radius: var(--rs-avatar-shape);
 
 		// Remove masks
@@ -28,7 +28,7 @@
 				cx: 4 !important;
 			}
 		}
-		.mask__1979f {
+		.mask_d5067d {
 			& > rect[x='22'] {
 				x: 0;
 				y: 0;
@@ -41,7 +41,7 @@
 				cy: 20;
 			}
 		}
-		.pointerEvents__33f6a[x='14.5'] {
+		.pointerEvents__585e6[x='14.5'] {
 			fill: rgba(0, 0, 0, 0.5) !important;
 			width: 30px;
 			height: 30px;
@@ -62,7 +62,7 @@
 		}
 		&[style*='80px'],
 		&[style*='120px'] {
-			svg.cursorDefault_e4f616 rect {
+			svg.cursorDefault_e0f002 rect {
 				ry: calc(var(--rs-avatar-shape) * 3.3);
 				rx: calc(var(--rs-avatar-shape) * 3.3);
 			}
@@ -164,7 +164,7 @@
 		// Medium ring (user popout)
 		&[style*='80px'] {
 			// Updated status
-			svg.cursorDefault_e4f616 rect {
+			svg.cursorDefault_e0f002 rect {
 				x: -48;
 				y: -52;
 			}
@@ -184,7 +184,7 @@
 		// Large ring (user profile)
 		&[style*='120px'] {
 			// Updated status
-			svg.cursorDefault_e4f616 rect {
+			svg.cursorDefault_e0f002 rect {
 				x: -70;
 				y: -76;
 			}
@@ -273,10 +273,10 @@
 	}
 
 	// Bottom left avatar, speaking in VC
-	.avatarStack__6604a {
+	.avatarStack__789b4 {
 		position: relative;
 	}
-	.avatarSpeaking__61fb1 {
+	.avatarSpeaking__747a1 {
 		position: absolute;
 		top: 2px;
 		left: 2px;
@@ -288,7 +288,7 @@
 	}
 
 	// Mobile and typing fix for status everywhere plugins
-	.message__80c10 .wrapper_edb6e0 {
+	.message_ccca67 .wrapper__3ed10 {
 		foreignObject[mask*='mobile'] {
 			width: calc(100% + 3px);
 		}
@@ -298,10 +298,10 @@
 	}
 
 	// Avatar hint
-	.avatarHint__8e5b9 foreignObject {
+	.avatarHint__15059 foreignObject {
 		mask: none;
 	}
-	.avatarHintInner__3d1c9 {
+	.avatarHintInner_c8ddb1 {
 		border-radius: var(--rs-avatar-shape) !important;
 		padding-top: 0;
 		width: calc(100% - var(--rs-medium-width) - var(--rs-medium-spacing) + 1px * 2);
@@ -316,23 +316,23 @@
 	.memberOffline-2lN7gt img {
 		clip-path: none !important;
 	}
-	.offline_c1fd80 img {
+	.offline__55fab img {
 		clip-path: none !important;
 	}
 
 	// Webhook popout
-	.avatarWrapperNonUserBot_d27212 .wrapper_edb6e0 img {
+	.avatarWrapperNonUserBot__5ff3f .wrapper__3ed10 img {
 		clip-path: none !important;
 	}
 
 	// Fix clipping on user friends tab
-	.userInfo__18240 .wrapper_edb6e0 {
+	.userInfo__83819 .wrapper__3ed10 {
 		margin-top: 1px;
 		margin-left: 1px;
 	}
 
 	// Version info
-	.info__755e1 .line__75801:last-child:after {
+	.info__755e1 .line_cdcacc:last-child:after {
 		content: 'RadialStatus ' var(--rs-version);
 		display: block;
 	}
