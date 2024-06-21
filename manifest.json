@@ -1,7 +1,7 @@
 {
 	"id": "me.gibbu.RadialStatus",
 	"name": "RadialStatus",
-	"description": "Changes the status icons to wrap around the avatar. Shape can be changed inside the theme file.",
+	"description": "Changes the status icons to wrap around the avatar.",
 	"author": {
 		"name": "Gibbu",
 		"discordID": "174868361040232448",
@@ -16,5 +16,5 @@
 	"type": "replugged-theme",
 	"main": "src/dev.scss",
 	"source": "https://github.com/DiscordStyles/RadialStatus",
-	"image": "https://cdn.discordapp.com/attachments/1142305515439923260/1145537730072301618/radialstatus.jpg"
+	"image": "https://i.imgur.com/4zZU4iw.jpg"
 }
