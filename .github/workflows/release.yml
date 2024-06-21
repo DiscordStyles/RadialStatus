@@ -27,7 +27,7 @@ jobs:
         run: pnpm install
 
       - name: Build and bundle theme
-        run: pnpm run build:asar
+        run: pnpm run bundle
 
       - name: Release bundled theme
         uses: ncipollo/release-action@v1
