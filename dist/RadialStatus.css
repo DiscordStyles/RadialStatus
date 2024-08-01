@@ -111,7 +111,7 @@
   rx: calc(var(--rs-avatar-shape) * 3.3);
 }
 #app-mount .wrapper_c51b4e[style*="40px"] foreignObject[mask*=mobile] img {
-  width: calc(100% - 12px);
+  width: calc(100% - 18px);
 }
 #app-mount .wrapper_c51b4e[style*="80px"] svg.cursorDefault_c51b4e rect {
   x: -48;
@@ -152,26 +152,25 @@
           clip-path: none;
 }
 #app-mount .wrapper_c51b4e foreignObject[mask*=mobile] {
-  width: calc(100% + 4px);
+  property: inherit;
 }
-#app-mount .wrapper_c51b4e foreignObject[mask*=mobile][width="32"] img {
-  width: calc(100% - 12px);
+#app-mount .wrapper_c51b4e foreignObject[mask*=mobile][width="24"]:after {
+  width: 10px;
+  height: 12px;
+  top: 30%;
 }
-#app-mount .wrapper_c51b4e foreignObject[mask*=mobile][width="80"] img {
-  width: calc(100% - 16px);
+#app-mount .wrapper_c51b4e foreignObject[mask*=mobile][width="32"]:after {
+  width: 10px;
+  height: 14px;
+  top: 30%;
 }
 #app-mount .wrapper_c51b4e foreignObject[mask*=mobile][width="80"]:after {
   width: 14px;
   height: 18px;
-  top: 75%;
-}
-#app-mount .wrapper_c51b4e foreignObject[mask*=mobile][width="120"] img {
-  width: calc(100% - 22px);
 }
 #app-mount .wrapper_c51b4e foreignObject[mask*=mobile][width="120"]:after {
   width: 24px;
   height: 20px;
-  top: 75%;
 }
 #app-mount .wrapper_c51b4e foreignObject[mask*=mobile]:after {
   content: "";
@@ -179,19 +178,13 @@
   -webkit-mask: url('data:image/svg+xml; utf-8,<svg aria-hidden="true" focusable="false" data-prefix="fas" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z"></path></svg>') center no-repeat;
           mask: url('data:image/svg+xml; utf-8,<svg aria-hidden="true" focusable="false" data-prefix="fas" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z"></path></svg>') center no-repeat;
   position: absolute;
-  width: 10px;
-  height: 14px;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0;
+  right: 0%;
+  bottom: 0%;
   background: var(--rs-phone-color, var(--rs-online-color));
   z-index: 1;
 }
 #app-mount .wrapper_c51b4e foreignObject[mask*=mobile] + rect {
   stroke: var(--rs-phone-color, var(--rs-online-color));
-}
-#app-mount .avatarStack_c51b4e {
-  position: relative;
 }
 #app-mount .avatarSpeaking_c51b4e {
   position: absolute;
