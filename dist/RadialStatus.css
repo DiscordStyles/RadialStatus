@@ -43,7 +43,7 @@
   x: 1;
   y: 1;
 }
-#app-mount .wrapper_c51b4e img, #app-mount .wrapper_c51b4e.avatar_e9f61e {
+#app-mount .wrapper_c51b4e img, #app-mount .wrapper_c51b4e.avatar_d808b0 {
   border-radius: var(--rs-avatar-shape);
 }
 #app-mount .wrapper_c51b4e svg[width="25"][height="15"] > rect {
