@@ -1,9 +1,20 @@
 {
+	"id": "me.gibbu.RadialStatus",
 	"name": "RadialStatus",
-	"description": "Changes the status icons to wrap around the avatar. Shape can be changed inside the theme file",
-	"version": "1.0.0",
-	"author": "Gibbu#1211",
-	"theme": "dist/RadialStatus.theme.css",
-	"consent": ["ext_listing"],
-	"license": "MIT"
+	"description": "Changes the status icons to wrap around the avatar.",
+	"author": {
+		"name": "Gibbu",
+		"discordID": "174868361040232448",
+		"github": "Gibbu"
+	},
+	"version": "2.0.0",
+	"updater": {
+		"type": "store",
+		"id": "me.gibbu.Template"
+	},
+	"license": "MIT",
+	"type": "replugged-theme",
+	"main": "src/dev.scss",
+	"source": "https://github.com/DiscordStyles/RadialStatus",
+	"image": "https://i.imgur.com/4zZU4iw.jpg"
 }
