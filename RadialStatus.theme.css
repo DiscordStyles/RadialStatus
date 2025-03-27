@@ -5,10 +5,11 @@
  * @description Changes the status icons to wrap around the avatar. Shape can be changed inside the theme file.
  * @source https://github.com/DiscordStyles/RadialStatus
  * @invite ZHthyCw
- * @website https://www.gibbu.me
 */
 
-@import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
+@import url('https://discordstyles.github.io/RadialStatus/RadialStatus.css');
+
+
 
 :root {
   /*
@@ -45,3 +46,4 @@
     */
   --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
 }
+
