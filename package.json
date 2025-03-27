@@ -1,10 +1,4 @@
 {
-	"name": "radialstatus",
-	"version": "1.0.0",
-	"description": "Changes the status icons to wrap around the avatar. Shape can be changed inside the theme file.",
-	"repository": "https://github.com/DiscordStyles/RadialStatus.git",
-	"author": "Gibbu <Gibbu_@hotmail.com>",
-	"license": "MIT",
 	"private": false,
 	"type": "module",
 	"scripts": {
@@ -12,9 +6,9 @@
 		"build": "bd-scss build"
 	},
 	"dependencies": {
-		"bd-scss": "^2.0.12"
+		"bd-scss": "^3.0.5"
 	},
 	"devDependencies": {
-		"prettier": "^2.8.4"
+		"prettier": "^3.5.3"
 	}
 }

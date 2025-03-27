@@ -1,5 +1,5 @@
 :root {
-	--rs-version: '2.0.9';
+	--rs-version: '2.0.10';
 }
 
 #app-mount {
@@ -81,6 +81,7 @@
 			fill: transparent !important;
 			stroke-width: var(--rs-small-width);
 			&[fill='#43b581'],
+			&[fill='#43a25a'],
 			&[fill='#3ba55c'],
 			&[fill='rgba(67, 181, 129, 1)'],
 			&[mask*='online'],
@@ -90,6 +91,7 @@
 				stroke: var(--rs-online-color);
 			}
 			&[fill='#faa61a'],
+			&[fill='#ca9654'],
 			&[fill='rgba(250, 166, 26, 1)'],
 			&[mask*='idle'],
 			&[fill*='hsl(38'],
@@ -98,6 +100,7 @@
 				stroke: var(--rs-idle-color);
 			}
 			&[fill='#f04747'],
+			&[fill='#d83a42'],
 			&[fill='rgba(240, 71, 71, 1)'],
 			&[fill='#ed4245'],
 			&[mask*='dnd'],
@@ -118,6 +121,7 @@
 				stroke: var(--rs-offline-color);
 			}
 			&[fill='#747f8d'],
+			&[fill='#83838b'],
 			&[mask*='invisible'],
 			&[fill='rgba(116, 127, 141, 1)'],
 			&[fill*='hsl(214'],
@@ -284,7 +288,8 @@
 		width: calc(100% - 4px);
 		height: calc(100% - 4px);
 		border-radius: var(--rs-avatar-shape);
-		box-shadow: inset 0 0 0 2px var(--rs-self-speaking-colour, #57d39b),
+		box-shadow:
+			inset 0 0 0 2px var(--rs-self-speaking-colour, #57d39b),
 			inset 0 0 0 3px var(--background-secondary);
 	}
 
