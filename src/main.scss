@@ -1,5 +1,5 @@
 :root {
-	--rs-version: '2.0.10';
+	--rs-version: '2.0.11';
 }
 
 #app-mount {
@@ -43,10 +43,10 @@
 		}
 		.pointerEvents__44b0c[x='14.5'] {
 			fill: rgba(0, 0, 0, 0.5) !important;
-			width: 30px;
-			height: 30px;
-			x: 1;
-			y: 1;
+			width: var(--rs-members-width, 30px);
+			height: var(--rs-members-width, 30px);
+			x: calc((var(--rs-members-width, 30px) / 2) / -1 + 2px);
+			y: calc((var(--rs-members-width, 30px) / 2) / -1);
 		}
 
 		// Avatar shape
@@ -279,8 +279,18 @@
 		}
 	}
 
-	//Bottom left avatar, speaking in VC
+	// User area
+	.avatarWrapper__37e49 .mask__44b0c > g {
+		transform: none !important;
+		rect {
+			width: var(--rs-user-area-size, 40px);
+			height: var(--rs-user-area-size, 40px);
+			rx: calc(var(--rs-avatar-shape) * 2) !important;
+			ry: calc(var(--rs-avatar-shape) * 2) !important;
+		}
+	}
 
+	//Bottom left avatar, speaking in VC
 	.avatarSpeaking__44b0c {
 		position: absolute;
 		top: 2px;
