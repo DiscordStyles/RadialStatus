@@ -81,15 +81,18 @@
 			fill: transparent !important;
 			stroke-width: var(--rs-small-width);
 			&[fill='#23a55a'],
-			&[fill='#40a258'] {
+			&[fill='#40a258'],
+			&[fill='#43a25a'] {
 				stroke: var(--rs-online-color);
 			}
 			&[fill='#f0b232'],
-			&[fill='#cc954c'] {
+			&[fill='#cc954c'],
+			&[fill='#ca9654'] {
 				stroke: var(--rs-idle-color);
 			}
 			&[fill='#f23f43'],
-			&[fill='#d83a41'] {
+			&[fill='#d83a41'],
+			&[fill='#d83a42'] {
 				stroke: var(--rs-dnd-color);
 			}
 			&[fill='#593695'],
