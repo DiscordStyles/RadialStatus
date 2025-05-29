@@ -330,4 +330,10 @@
 		content: 'RadialStatus ' var(--rs-version);
 		display: block;
 	}
+
+	// Fix avatar decorations getting cut off
+	.avatar__44b0c[src*='decorations'] {
+		border-radius: 0 !important;
+		clip-path: none !important;
+	}
 }
