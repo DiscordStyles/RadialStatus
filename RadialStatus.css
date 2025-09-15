@@ -182,15 +182,6 @@
 #app-mount .wrapper__44b0c foreignObject[mask*=mobile] + rect {
   stroke: var(--rs-phone-color, var(--rs-online-color));
 }
-#app-mount .avatarWrapper__37e49 .mask__44b0c > g {
-  transform: none !important;
-}
-#app-mount .avatarWrapper__37e49 .mask__44b0c > g rect {
-  width: var(--rs-user-area-size, 40px);
-  height: var(--rs-user-area-size, 40px);
-  rx: calc(var(--rs-avatar-shape) * 2) !important;
-  ry: calc(var(--rs-avatar-shape) * 2) !important;
-}
 #app-mount .avatarSpeaking__44b0c {
   position: absolute;
   top: 2px;
