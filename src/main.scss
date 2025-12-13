@@ -333,7 +333,7 @@
 	}
 
 	// Fix avatar decorations getting cut off
-	.avatar__44b0c[src*="avatar-decoration"] {
+	svg[class^="avatarDecoration__"] .avatarStack__44b0c > img {
 		border-radius: 0 !important;
 	}
 }
