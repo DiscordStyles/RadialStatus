@@ -50,7 +50,7 @@
 		}
 
 		// Avatar shape
-		img,
+		img:not([src*="avatar-decoration"]),
 		&.avatar__91a9d {
 			border-radius: var(--rs-avatar-shape);
 		}
@@ -330,10 +330,5 @@
 	.info__2debe .line__2debe:last-child:after {
 		content: 'RadialStatus ' var(--rs-version);
 		display: block;
-	}
-
-	// Fix avatar decorations getting cut off
-	svg[class^="avatarDecoration__"] .avatarStack__44b0c > img {
-		border-radius: 0 !important;
 	}
 }
