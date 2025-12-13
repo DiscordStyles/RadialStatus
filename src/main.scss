@@ -332,8 +332,7 @@
 	}
 
 	// Fix avatar decorations getting cut off
-	.avatar__44b0c[src*='deco'] {
+	.avatar__44b0c[src*="avatar-decoration"] {
 		border-radius: 0 !important;
-		clip-path: none !important;
 	}
 }
