@@ -50,7 +50,7 @@
 		}
 
 		// Avatar shape
-		img:not([src*="avatar-decoration-presets"]),
+		&img:not([src*="avatar-decoration-presets"]),
 		&.avatar__91a9d {
 			border-radius: var(--rs-avatar-shape);
 		}
