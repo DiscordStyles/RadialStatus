@@ -3,20 +3,24 @@
 }
 
 #app-mount {
-	.wrapper__44b0c {
+	._44b0c28be7879b7b-wrapper {
 		border-radius: var(--rs-avatar-shape);
 
 		// Remove masks
 		svg:not(:root) {
 			overflow: visible;
 			contain: none;
+
+			g[transform] {
+				transform: scale(1) !important;
+			}
 		}
 		foreignObject {
 			mask: none;
 		}
 
 		// Typing indicator
-		.dots__5ad89 circle {
+		._5ad890d06f24286d-dots circle {
 			cy: -8 !important;
 			&:nth-child(1) {
 				cx: -8.5 !important;
@@ -28,7 +32,7 @@
 				cx: 4 !important;
 			}
 		}
-		.mask__44b0c {
+		._44b0c28be7879b7b-mask {
 			& > rect[x='22'] {
 				x: 0;
 				y: 0;
@@ -41,7 +45,7 @@
 				cy: 20;
 			}
 		}
-		.pointerEvents__44b0c[x='14.5'] {
+		._44b0c28be7879b7b-pointerEvents[x='14.5'] {
 			fill: rgba(0, 0, 0, 0.5) !important;
 			width: var(--rs-members-width, 30px);
 			height: var(--rs-members-width, 30px);
@@ -51,7 +55,7 @@
 
 		// Avatar shape
 		img,
-		&.avatar__91a9d {
+		&._91a9d7f7e5248a56-avatar {
 			border-radius: var(--rs-avatar-shape);
 		}
 
@@ -62,7 +66,7 @@
 		}
 		&[style*='80px'],
 		&[style*='120px'] {
-			svg.cursorDefault__44b0c rect {
+			svg._44b0c28be7879b7b-cursorDefault rect {
 				ry: calc(var(--rs-avatar-shape) * 3.3);
 				rx: calc(var(--rs-avatar-shape) * 3.3);
 			}
@@ -122,8 +126,8 @@
 		&[style*='32px'] rect {
 			width: 32px;
 			height: 32px;
-			x: -14.5;
-			y: -17;
+			// x: -14.5;
+			// y: -17;
 			position: relative;
 			z-index: 0;
 		}
@@ -146,7 +150,7 @@
 		// Medium ring (user popout)
 		&[style*='80px'] {
 			// Updated status
-			svg.cursorDefault__44b0c rect {
+			svg._44b0c28be7879b7b-cursorDefault rect {
 				x: -48;
 				y: -52;
 			}
@@ -166,7 +170,7 @@
 		// Large ring (user profile)
 		&[style*='120px'] {
 			// Updated status
-			svg.cursorDefault__44b0c rect {
+			svg._44b0c28be7879b7b-cursorDefault rect {
 				x: -70;
 				y: -76;
 			}
@@ -257,17 +261,6 @@
 		}
 	}
 
-	// User area
-	// .avatarWrapper__37e49 .mask__44b0c > g {
-	// 	transform: none !important;
-	// 	rect {
-	// 		width: var(--rs-user-area-size, 40px);
-	// 		height: var(--rs-user-area-size, 40px);
-	// 		rx: calc(var(--rs-avatar-shape) * 2) !important;
-	// 		ry: calc(var(--rs-avatar-shape) * 2) !important;
-	// 	}
-	// }
-
 	//Bottom left avatar, speaking in VC
 	.avatarSpeaking__44b0c {
 		position: absolute;
@@ -282,7 +275,7 @@
 	}
 
 	// Mobile and typing fix for status everywhere plugins
-	.message__5126c .wrapper__44b0c {
+	._5126c0cd07f243a0-message ._44b0c28be7879b7b-wrapper {
 		foreignObject[mask*='mobile'] {
 			width: calc(100% + 3px);
 		}
@@ -310,23 +303,23 @@
 	.memberOffline-2lN7gt img {
 		clip-path: none !important;
 	}
-	.offline__5d473 img {
+	._5d473ecff348c314-offline img {
 		clip-path: none !important;
 	}
 
 	// Webhook popout
-	.avatarWrapperNonUserBot_f89da9 .wrapper__44b0c img {
+	.avatarWrapperNonUserBot_f89da9 ._44b0c28be7879b7b-wrapper img {
 		clip-path: none !important;
 	}
 
 	// Fix clipping on user friends tab
-	.userInfo__0a06e .wrapper__44b0c {
+	._0a06ed6ea040aa1b-userInfo ._44b0c28be7879b7b-wrapper {
 		margin-top: 1px;
 		margin-left: 1px;
 	}
 
 	// Version info
-	.info__2debe .line__2debe:last-child:after {
+	._2debea61131de3de-info ._2debea61131de3de-line:last-child:after {
 		content: 'RadialStatus ' var(--rs-version);
 		display: block;
 	}

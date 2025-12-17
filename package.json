@@ -3,12 +3,13 @@
 	"type": "module",
 	"scripts": {
 		"dev": "bun --bun bd-scss dev",
-		"build": "bun --bun bd-scss build"
+		"build": "bun --bun bd-scss build",
+		"reroll": "bun --bun bd-scss reroll"
 	},
 	"dependencies": {
 		"bd-scss": "^3.0.7"
 	},
 	"devDependencies": {
-		"prettier": "^3.6.2"
+		"prettier": "^3.7.4"
 	}
 }
