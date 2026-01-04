@@ -86,17 +86,20 @@
 			stroke-width: var(--rs-small-width);
 			&[fill='#23a55a'],
 			&[fill='#40a258'],
-			&[fill='#43a25a'] {
+			&[fill='#43a25a'],
+			&[fill='#45a366'] {
 				stroke: var(--rs-online-color);
 			}
 			&[fill='#f0b232'],
 			&[fill='#cc954c'],
-			&[fill='#ca9654'] {
+			&[fill='#ca9654'],
+			&[fill='#ffc04e'] {
 				stroke: var(--rs-idle-color);
 			}
 			&[fill='#f23f43'],
 			&[fill='#d83a41'],
-			&[fill='#d83a42'] {
+			&[fill='#d83a42'],
+			&[fill='#da3e44'] {
 				stroke: var(--rs-dnd-color);
 			}
 			&[fill='#593695'],
@@ -108,7 +111,8 @@
 				stroke: var(--rs-offline-color);
 			}
 			&[fill='#82858f'],
-			&[fill='#82838b'] {
+			&[fill='#82838b'],
+			&[fill='#84858d'] {
 				stroke: var(--rs-invisible-color);
 			}
 			&[x='16'] {
@@ -255,7 +259,8 @@
 				z-index: 1;
 			}
 
-			& + rect {
+			& + rect,
+			& + g > rect {
 				stroke: var(--rs-phone-color, var(--rs-online-color));
 			}
 		}
