@@ -107,7 +107,8 @@
 			&[fill*='var(--status-purple'] {
 				stroke: var(--rs-streaming-color);
 			}
-			&[fill='#80848e'] {
+			&[fill='#80848e'],
+			&[fill='#84858d'] {
 				stroke: var(--rs-offline-color);
 			}
 			&[fill='#82858f'],
