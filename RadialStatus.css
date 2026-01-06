@@ -70,22 +70,22 @@
   fill: transparent !important;
   stroke-width: var(--rs-small-width);
 }
-#app-mount ._44b0c28be7879b7b-wrapper rect[fill="#23a55a"], #app-mount ._44b0c28be7879b7b-wrapper rect[fill="#40a258"], #app-mount ._44b0c28be7879b7b-wrapper rect[fill="#43a25a"] {
+#app-mount ._44b0c28be7879b7b-wrapper rect[fill="#23a55a"], #app-mount ._44b0c28be7879b7b-wrapper rect[fill="#40a258"], #app-mount ._44b0c28be7879b7b-wrapper rect[fill="#43a25a"], #app-mount ._44b0c28be7879b7b-wrapper rect[fill="#45a366"] {
   stroke: var(--rs-online-color);
 }
-#app-mount ._44b0c28be7879b7b-wrapper rect[fill="#f0b232"], #app-mount ._44b0c28be7879b7b-wrapper rect[fill="#cc954c"], #app-mount ._44b0c28be7879b7b-wrapper rect[fill="#ca9654"] {
+#app-mount ._44b0c28be7879b7b-wrapper rect[fill="#f0b232"], #app-mount ._44b0c28be7879b7b-wrapper rect[fill="#cc954c"], #app-mount ._44b0c28be7879b7b-wrapper rect[fill="#ca9654"], #app-mount ._44b0c28be7879b7b-wrapper rect[fill="#ffc04e"] {
   stroke: var(--rs-idle-color);
 }
-#app-mount ._44b0c28be7879b7b-wrapper rect[fill="#f23f43"], #app-mount ._44b0c28be7879b7b-wrapper rect[fill="#d83a41"], #app-mount ._44b0c28be7879b7b-wrapper rect[fill="#d83a42"] {
+#app-mount ._44b0c28be7879b7b-wrapper rect[fill="#f23f43"], #app-mount ._44b0c28be7879b7b-wrapper rect[fill="#d83a41"], #app-mount ._44b0c28be7879b7b-wrapper rect[fill="#d83a42"], #app-mount ._44b0c28be7879b7b-wrapper rect[fill="#da3e44"] {
   stroke: var(--rs-dnd-color);
 }
 #app-mount ._44b0c28be7879b7b-wrapper rect[fill="#593695"], #app-mount ._44b0c28be7879b7b-wrapper rect[mask*=streaming], #app-mount ._44b0c28be7879b7b-wrapper rect[fill*="var(--status-purple"] {
   stroke: var(--rs-streaming-color);
 }
-#app-mount ._44b0c28be7879b7b-wrapper rect[fill="#80848e"] {
+#app-mount ._44b0c28be7879b7b-wrapper rect[fill="#80848e"], #app-mount ._44b0c28be7879b7b-wrapper rect[fill="#84858d"] {
   stroke: var(--rs-offline-color);
 }
-#app-mount ._44b0c28be7879b7b-wrapper rect[fill="#82858f"], #app-mount ._44b0c28be7879b7b-wrapper rect[fill="#82838b"] {
+#app-mount ._44b0c28be7879b7b-wrapper rect[fill="#82858f"], #app-mount ._44b0c28be7879b7b-wrapper rect[fill="#82838b"], #app-mount ._44b0c28be7879b7b-wrapper rect[fill="#84858d"] {
   stroke: var(--rs-invisible-color);
 }
 #app-mount ._44b0c28be7879b7b-wrapper rect[x="16"] {
@@ -180,7 +180,7 @@
   background: var(--rs-phone-color, var(--rs-online-color));
   z-index: 1;
 }
-#app-mount ._44b0c28be7879b7b-wrapper foreignObject[mask*=mobile] + rect {
+#app-mount ._44b0c28be7879b7b-wrapper foreignObject[mask*=mobile] + rect, #app-mount ._44b0c28be7879b7b-wrapper foreignObject[mask*=mobile] + g > rect {
   stroke: var(--rs-phone-color, var(--rs-online-color));
 }
 #app-mount .avatarSpeaking__44b0c {
