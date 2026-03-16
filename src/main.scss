@@ -154,11 +154,12 @@
 
 		// Medium ring (user popout)
 		&[style*='80px'] {
-			// Updated status
-			svg.cursorDefault__44b0c rect {
-				x: -48;
-				y: -52;
-			}
+			// Updated status 
+			// Commented in case of future discord reroll?
+			// svg.cursorDefault__44b0c rect {
+			// 	x: -48;
+			// 	y: -52;
+			// }
 			rect {
 				width: 80px;
 				height: 80px;
@@ -175,10 +176,11 @@
 		// Large ring (user profile)
 		&[style*='120px'] {
 			// Updated status
-			svg.cursorDefault__44b0c rect {
-				x: -70;
-				y: -76;
-			}
+			// Commented in case of future discord reroll?
+			// svg.cursorDefault__44b0c rect {
+			// 	x: -70;
+			// 	y: -76;
+			// }
 			rect {
 				width: 120px;
 				height: 120px;
