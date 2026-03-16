@@ -152,6 +152,12 @@
 			}
 		}
 
+		// Server Mod View Avatar
+		&[style*='48px'] rect {
+			width: 48px;
+			height: 48px;
+		}
+
 		// Medium ring (user popout)
 		&[style*='80px'] {
 			// Updated status
