@@ -114,6 +114,10 @@
 #app-mount .wrapper__44b0c[style*="40px"] foreignObject[mask*=mobile] img {
   width: calc(100% - 18px);
 }
+#app-mount .wrapper__44b0c[style*="48px"] rect {
+  width: 48px;
+  height: 48px;
+}
 #app-mount .wrapper__44b0c[style*="80px"] rect {
   width: 80px;
   height: 80px;
