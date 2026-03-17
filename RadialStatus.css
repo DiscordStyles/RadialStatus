@@ -114,10 +114,6 @@
 #app-mount .wrapper__44b0c[style*="40px"] foreignObject[mask*=mobile] img {
   width: calc(100% - 18px);
 }
-#app-mount .wrapper__44b0c[style*="80px"] svg.cursorDefault__44b0c rect {
-  x: -48;
-  y: -52;
-}
 #app-mount .wrapper__44b0c[style*="80px"] rect {
   width: 80px;
   height: 80px;
@@ -125,10 +121,6 @@
 }
 #app-mount .wrapper__44b0c[style*="80px"] img {
   clip-path: inset(calc(var(--rs-medium-spacing) + 1px) calc(var(--rs-medium-spacing) + 1px) round var(--rs-avatar-shape));
-}
-#app-mount .wrapper__44b0c[style*="120px"] svg.cursorDefault__44b0c rect {
-  x: -70;
-  y: -76;
 }
 #app-mount .wrapper__44b0c[style*="120px"] rect {
   width: 120px;
