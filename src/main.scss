@@ -3,7 +3,7 @@
 }
 
 #app-mount {
-	.wrapper__44b0c {
+	..wrapper_XpIUHy {
 		border-radius: var(--rs-avatar-shape);
 
 		// Remove masks
@@ -20,7 +20,7 @@
 		}
 
 		// Typing indicator
-		.dots__5ad89 circle {
+		.dots_C1dbpS circle {
 			cy: 22.25 !important;
 			&:nth-child(1) {
 				cx: 17 !important;
@@ -32,7 +32,7 @@
 				cx: 30.5 !important;
 			}
 		}
-		.mask__44b0c {
+		.mask_XpIUHy {
 			& > rect[x='22'] {
 				x: 0;
 				y: 0;
@@ -45,7 +45,7 @@
 				cy: 20;
 			}
 		}
-		.pointerEvents__44b0c[x='14.5'] {
+		.pointerEvents_XpIUHy[x='14.5'] {
 			fill: rgba(0, 0, 0, 0.5) !important;
 			width: var(--rs-members-width, 30px);
 			height: var(--rs-members-width, 30px);
@@ -55,7 +55,7 @@
 
 		// Avatar shape
 		img,
-		&.avatar__91a9d {
+		&.avatar_J1Adu_ {
 			border-radius: var(--rs-avatar-shape);
 		}
 
@@ -289,7 +289,7 @@
 	}
 
 	// Mobile and typing fix for status everywhere plugins
-	.message__5126c .wrapper__44b0c {
+	.message_SY_P2T .wrapper_XpIUHy {
 		foreignObject[mask*='mobile'] {
 			width: calc(100% + 3px);
 		}
@@ -317,17 +317,17 @@
 	.memberOffline-2lN7gt img {
 		clip-path: none !important;
 	}
-	.offline__5d473 img {
+	.offline_Iy0c7A img {
 		clip-path: none !important;
 	}
 
 	// Webhook popout
-	.avatarWrapperNonUserBot_f89da9 .wrapper__44b0c img {
+	.avatarWrapperNonUserBot_f89da9 .wrapper_XpIUHy img {
 		clip-path: none !important;
 	}
 
 	// Fix clipping on user friends tab
-	.userInfo__0a06e .wrapper__44b0c {
+	.userInfo_jPuNMC .wrapper_XpIUHy {
 		margin-top: 1px;
 		margin-left: 1px;
 	}
@@ -339,11 +339,11 @@
 	}
 
 	// Fix for avatar size and off centered status
-	.wrapper__44b0c.avatar_f75fb0 {
+	.wrapper_XpIUHy.avatar_z_gUBg {
 		margin-left: var(--rs-small-width);
 	}
 	
-	.wrapper__44b0c[style*="20px"] foreignObject[mask*=svg-mask-avatar-status-round-20] {
+	.wrapper_XpIUHy[style*="20px"] foreignObject[mask*=svg-mask-avatar-status-round-20] {
 		width: 25px;
 		height: 25px;
 	}
